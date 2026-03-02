@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+<head>
+  
+  <!-- Google Tag Manager -->
+  <script>
+  (function (w, d, s, l, i) {
+    var host = (w.location && w.location.hostname) ? w.location.hostname : '';
+    var allowedHosts = { 'deartbox.com': true, 'www.deartbox.com': true };
+    if (!allowedHosts[host]) return;
+
+    w[l] = w[l] || [];
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var f = d.getElementsByTagName(s)[0];
+    var j = d.createElement(s);
+    var dl = l !== 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-KG4RSDLX');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#d71921">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#d71921" media="(prefers-color-scheme: light)">
+
+  <title>Request Harga Custom Packaging | deartbox Packaging</title>
+  <meta name="description" content="Dapatkan penawaran harga custom packaging untuk brand Anda. Isi form request quotation dan tim kami akan menghubungi Anda dalam 1x24 jam.">
+  <meta name="robots" content="index, follow">
+  <meta name="google-site-verification" content="i8j9jEXefQCjqMfNGCBsiyXZB3z-Nv9wRKvk8m2bVUE">
+  <link rel="canonical" href="https://deartbox.com/requestharga/">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="deartbox Packaging">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" content="Request Harga Custom Packaging | deartbox Packaging">
+  <meta property="og:description" content="Dapatkan penawaran harga custom packaging untuk brand Anda. Tim kami akan menghubungi Anda dalam 1x24 jam.">
+  <meta property="og:url" content="https://deartbox.com/requestharga/">
+  <meta property="og:image" content="https://deartbox.com/assets/images/social/og-deartbox.png">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Request Harga Custom Packaging | deartbox Packaging">
+  <meta name="twitter:description" content="Dapatkan penawaran harga custom packaging untuk brand Anda.">
+  <meta name="twitter:image" content="https://deartbox.com/assets/images/social/og-deartbox.png">
+
+  <meta name="ga4-id" content="G-BXHJ9K2561">
+  <meta name="meta-pixel-id" content="887198000733531">
+
+  <link rel="preload" href="../assets/logo/deartbox-logo.svg" as="image" type="image/svg+xml">
+  <link rel="preload" href="../optimized_styles.min.css" as="style">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/logo/deartbox-logo.svg">
+  <link rel="stylesheet" href="../optimized_styles.min.css">
+
+  <style>
+    /* Request Harga Form Styles */
+    .rh-page-main {
+      padding: 120px 0 60px;
+      min-height: 100vh;
+    }
+
+    .rh-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .rh-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .rh-header h1 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .rh-header p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .rh-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+      transition: color 0.2s;
+    }
+
+    .rh-back:hover {
+      color: var(--accent);
+    }
+
+    /* Progress Bar */
+    .rh-progress {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+
+    .rh-progress-step {
+      width: 40px;
+      height: 4px;
+      background: var(--border-color);
+      border-radius: 2px;
+      transition: background 0.3s;
+    }
+
+    .rh-progress-step.active {
+      background: var(--accent);
+    }
+
+    .rh-progress-step.completed {
+      background: #22c55e;
+    }
+
+    /* Form Card */
+    .rh-form-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+
+    /* Step Container */
+    .rh-step {
+      display: none;
+    }
+
+    .rh-step.active {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .rh-step-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .rh-step-desc {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    /* Form Fields */
+    .rh-field {
+      margin-bottom: 20px;
+    }
+
+    .rh-field label {
+      display: block;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .rh-field label .required {
+      color: var(--accent);
+    }
+
+    .rh-field input[type="text"],
+    .rh-field input[type="email"],
+    .rh-field input[type="tel"],
+    .rh-field input[type="date"],
+    .rh-field textarea,
+    .rh-field select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-size: 1rem;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .rh-field input:focus,
+    .rh-field textarea:focus,
+    .rh-field select:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(215, 25, 33, 0.1);
+    }
+
+    .rh-field textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .rh-field small {
+      display: block;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      margin-top: 6px;
+    }
+
+    .rh-field.error input,
+    .rh-field.error textarea,
+    .rh-field.error select {
+      border-color: #ef4444;
+    }
+
+    .rh-field .error-message {
+      color: #ef4444;
+      font-size: 0.85rem;
+      margin-top: 6px;
+    }
+
+    /* Radio & Checkbox Groups */
+    .rh-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .rh-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .rh-option:hover {
+      border-color: var(--accent);
+      background: rgba(215, 25, 33, 0.02);
+    }
+
+    .rh-option.selected {
+      border-color: var(--accent);
+      background: rgba(215, 25, 33, 0.05);
+    }
+
+    .rh-option input {
+      margin-top: 2px;
+      accent-color: var(--accent);
+    }
+
+    .rh-option-content {
+      flex: 1;
+    }
+
+    .rh-option-title {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .rh-option-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* Checkbox Grid */
+    .rh-checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 10px;
+    }
+
+    .rh-checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .rh-checkbox-item:hover {
+      border-color: var(--accent);
+    }
+
+    .rh-checkbox-item.selected {
+      border-color: var(--accent);
+      background: rgba(215, 25, 33, 0.05);
+    }
+
+    .rh-checkbox-item input {
+      accent-color: var(--accent);
+    }
+
+    .rh-checkbox-item span {
+      font-size: 0.9rem;
+      color: var(--text-primary);
+    }
+
+    /* File Upload */
+    .rh-file-upload {
+      border: 2px dashed var(--border-color);
+      border-radius: 10px;
+      padding: 32px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .rh-file-upload:hover {
+      border-color: var(--accent);
+      background: rgba(215, 25, 33, 0.02);
+    }
+
+    .rh-file-upload.dragover {
+      border-color: var(--accent);
+      background: rgba(215, 25, 33, 0.05);
+    }
+
+    .rh-file-upload input {
+      display: none;
+    }
+
+    .rh-file-upload svg {
+      width: 40px;
+      height: 40px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .rh-file-upload p {
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+
+    .rh-file-upload small {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    .rh-file-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .rh-file-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: var(--bg-secondary);
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+
+    .rh-file-item button {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 2px;
+    }
+
+    .rh-file-item button:hover {
+      color: #ef4444;
+    }
+
+    /* Navigation Buttons */
+    .rh-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .rh-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+    }
+
+    .rh-btn-secondary {
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+
+    .rh-btn-secondary:hover {
+      background: var(--border-color);
+    }
+
+    .rh-btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .rh-btn-primary:hover {
+      background: #b8151c;
+      transform: translateY(-1px);
+    }
+
+    .rh-btn-primary:disabled {
+      background: var(--text-muted);
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .rh-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Success State */
+    .rh-success {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .rh-success-icon {
+      width: 80px;
+      height: 80px;
+      background: #22c55e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+
+    .rh-success-icon svg {
+      width: 40px;
+      height: 40px;
+      color: white;
+    }
+
+    .rh-success h2 {
+      font-size: 1.5rem;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+
+    .rh-success p {
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .rh-success-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .rh-btn-wa {
+      background: #25d366;
+      color: white;
+    }
+
+    .rh-btn-wa:hover {
+      background: #1fb855;
+    }
+
+    /* Row Layout */
+    .rh-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 600px) {
+      .rh-page-main {
+        padding: 100px 0 40px;
+      }
+
+      .rh-container {
+        padding: 0 16px;
+      }
+
+      .rh-header {
+        margin-bottom: 28px;
+      }
+
+      .rh-header h1 {
+        font-size: 1.5rem;
+      }
+
+      .rh-header p {
+        font-size: 0.9rem;
+      }
+
+      .rh-row {
+        grid-template-columns: 1fr;
+      }
+
+      .rh-form-card {
+        padding: 20px 16px;
+        border-radius: 12px;
+      }
+
+      .rh-step-title {
+        font-size: 1.1rem;
+      }
+
+      .rh-step-desc {
+        font-size: 0.85rem;
+      }
+
+      .rh-field label {
+        font-size: 0.9rem;
+      }
+
+      .rh-field input,
+      .rh-field textarea,
+      .rh-field select {
+        padding: 10px 14px;
+        font-size: 16px; /* Prevent zoom on iOS */
+      }
+
+      .rh-options {
+        gap: 10px;
+      }
+
+      .rh-option {
+        padding: 14px;
+      }
+
+      .rh-option-title {
+        font-size: 0.95rem;
+      }
+
+      .rh-option-desc {
+        font-size: 0.8rem;
+      }
+
+      .rh-checkbox-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .rh-checkbox-item {
+        padding: 10px 12px;
+      }
+
+      .rh-checkbox-item span {
+        font-size: 0.85rem;
+      }
+
+      .rh-file-upload {
+        padding: 24px 16px;
+      }
+
+      .rh-file-upload p {
+        font-size: 0.9rem;
+      }
+
+      .rh-nav {
+        flex-direction: column-reverse;
+        gap: 12px;
+        margin-top: 24px;
+        padding-top: 20px;
+      }
+
+      .rh-btn {
+        width: 100%;
+        padding: 14px 20px;
+      }
+
+      .rh-success h2 {
+        font-size: 1.25rem;
+      }
+
+      .rh-success p {
+        font-size: 0.9rem;
+      }
+
+      .rh-success-actions {
+        gap: 10px;
+      }
+
+      .rh-back {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+      }
+
+      .rh-progress {
+        margin-bottom: 24px;
+      }
+
+      .rh-progress-step {
+        width: 32px;
+        height: 3px;
+      }
+    }
+
+    /* Loading State */
+    .rh-loading {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .rh-loading.active {
+      display: flex;
+    }
+
+    .rh-spinner {
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG4RSDLX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- ================ HEADER ================ -->
+  <header>
+    <div class="header-container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../index.html" class="logo">
+          <div class="logo-mark">
+            <img src="../assets/logo/deartbox-logo.svg" alt="deartbox Logo" width="42" height="42" class="brand-logo" data-logo-light="../assets/logo/deartbox-logo.svg" data-logo-dark="../assets/logo/deartbox-logo-dark.svg">
+          </div>
+          <div class="logo-text">
+            <h1>deartbox Packaging</h1>
+            <p>Box Anda, Misi Kami.</p>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <details class="nav-dropdown">
+            <summary class="nav-link nav-dropdown-summary">Layanan Kami</summary>
+            <div class="nav-dropdown-menu" role="menu" aria-label="Layanan Kami">
+              <a href="../index.html#features" class="nav-link nav-dropdown-link" role="menuitem">Keunggulan</a>
+              <a href="../index.html#showcase" class="nav-link nav-dropdown-link" role="menuitem">Portofolio</a>
+              <a href="../index.html#process" class="nav-link nav-dropdown-link" role="menuitem">Proses Produksi</a>
+              <a href="../index.html#faq" class="nav-link nav-dropdown-link" role="menuitem">FAQ</a>
+            </div>
+          </details>
+          <a href="/blog/" class="nav-link">Blog &amp; Artikel</a>
+          <details class="nav-dropdown">
+            <summary class="nav-link nav-dropdown-summary">Hubungi Kami</summary>
+            <div class="nav-dropdown-menu" role="menu" aria-label="Hubungi Kami">
+              <a href="../index.html#testimonials" class="nav-link nav-dropdown-link" role="menuitem">Testimoni</a>
+              <a href="https://wa.me/628195181427" class="nav-link nav-dropdown-link" role="menuitem" target="_blank" rel="noopener noreferrer">WA</a>
+              <a href="mailto:deartboxpackaging@gmail.com" class="nav-link nav-dropdown-link" role="menuitem">Email</a>
+            </div>
+          </details>
+          <a href="https://wa.me/628195181427" class="cta-nav">Konsultasi Gratis</a>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="theme-toggle-icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-toggle-icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="mobile-toggle" aria-label="Toggle Menu" aria-controls="mobileMenu" aria-expanded="false" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <a href="../index.html" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          Beranda
+        </a>
+        <a href="../index.html#features" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="9" y1="9" x2="15" y2="9"></line>
+            <line x1="9" y1="15" x2="15" y2="15"></line>
+          </svg>
+          Keunggulan
+        </a>
+        <a href="../index.html#showcase" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+          Portofolio
+        </a>
+        <a href="../index.html#faq" class="mobile-nav-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.82 1c0 2-3 2-3 4"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          FAQ
+        </a>
+        <div class="mobile-menu-divider"></div>
+        <a href="https://wa.me/628195181427" class="mobile-cta mobile-cta-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+          </svg>
+          Konsultasi Gratis
+        </a>
+      </div>
+    </div>
+    <div class="mobile-overlay" aria-hidden="true"></div>
+  </header>
+
+  <main id="main-content" class="rh-page-main">
+    <div class="rh-container">
+      <a href="../index.html" class="rh-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Kembali ke Beranda
+      </a>
+
+      <div class="rh-header">
+        <h1>Request Harga Custom Packaging</h1>
+        <p>Dapatkan estimasi harga dan timeline produksi. Tim kami akan menghubungi Anda dalam 1x24 jam.</p>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="rh-progress" id="progressBar">
+        <div class="rh-progress-step active" data-step="1"></div>
+        <div class="rh-progress-step" data-step="2"></div>
+        <div class="rh-progress-step" data-step="3"></div>
+        <div class="rh-progress-step" data-step="4"></div>
+      </div>
+
+      <div class="rh-form-card">
+        <form id="requestHargaForm" novalidate>
+          
+          <!-- Step 1: Pilih Tipe Form -->
+          <div class="rh-step active" data-step="1">
+            <h2 class="rh-step-title">Pilih Jenis Formulir</h2>
+            <p class="rh-step-desc">Sesuaikan dengan kebutuhan Anda</p>
+
+            <div class="rh-options">
+              <label class="rh-option selected">
+                <input type="radio" name="form_type" value="short" checked>
+                <div class="rh-option-content">
+                  <div class="rh-option-title">Short Form – Cepat & Praktis</div>
+                  <div class="rh-option-desc">Cocok jika Anda belum memiliki spesifikasi detail. Tim kami akan bantu konsultasi lebih lanjut.</div>
+                </div>
+              </label>
+              <label class="rh-option">
+                <input type="radio" name="form_type" value="advanced">
+                <div class="rh-option-content">
+                  <div class="rh-option-title">Advanced Form – Detail & Spesifikasi Lengkap</div>
+                  <div class="rh-option-desc">Cocok jika Anda sudah memiliki detail lengkap. Estimasi harga lebih akurat.</div>
+                </div>
+              </label>
+            </div>
+
+            <div class="rh-nav">
+              <div></div>
+              <button type="button" class="rh-btn rh-btn-primary" data-next>
+                Lanjutkan
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Informasi Kontak -->
+          <div class="rh-step" data-step="2">
+            <h2 class="rh-step-title">Informasi Kontak</h2>
+            <p class="rh-step-desc">Data Anda aman dan hanya digunakan untuk keperluan penawaran</p>
+
+            <div class="rh-row">
+              <div class="rh-field">
+                <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                <input type="text" id="nama" name="nama" required placeholder="Nama lengkap Anda">
+              </div>
+              <div class="rh-field">
+                <label for="brand">Nama Brand / Perusahaan <span class="required">*</span></label>
+                <input type="text" id="brand" name="brand" required placeholder="Nama brand atau perusahaan">
+              </div>
+            </div>
+
+            <div class="rh-row">
+              <div class="rh-field">
+                <label for="whatsapp">Nomor WhatsApp <span class="required">*</span></label>
+                <input type="tel" id="whatsapp" name="whatsapp" required placeholder="08xxxxxxxxxx">
+                <small>Untuk komunikasi lebih lanjut</small>
+              </div>
+              <div class="rh-field">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="email@brand.com">
+              </div>
+            </div>
+
+            <!-- Alamat (Advanced Only) -->
+            <div class="rh-field advanced-only" style="display: none;">
+              <label for="alamat">Alamat Pengiriman</label>
+              <textarea id="alamat" name="alamat" rows="2" placeholder="Alamat lengkap untuk pengiriman (opsional)"></textarea>
+            </div>
+
+            <div class="rh-nav">
+              <button type="button" class="rh-btn rh-btn-secondary" data-prev>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Kembali
+              </button>
+              <button type="button" class="rh-btn rh-btn-primary" data-next>
+                Lanjutkan
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Kebutuhan Packaging (Short) / Detail Produk (Advanced) -->
+          <div class="rh-step" data-step="3">
+            <h2 class="rh-step-title short-title">Kebutuhan Packaging</h2>
+            <h2 class="rh-step-title advanced-title" style="display: none;">Detail Produk</h2>
+            <p class="rh-step-desc">Pilih jenis packaging yang Anda butuhkan</p>
+
+            <div class="rh-field">
+              <label>Jenis Packaging <span class="required">*</span></label>
+              <div class="rh-checkbox-grid">
+                <label class="rh-checkbox-item">
+                  <input type="checkbox" name="jenis_packaging" value="Rigid Box / Hardbox">
+                  <span>Rigid Box / Hardbox</span>
+                </label>
+                <label class="rh-checkbox-item">
+                  <input type="checkbox" name="jenis_packaging" value="Corrugated Box">
+                  <span>Corrugated Box</span>
+                </label>
+                <label class="rh-checkbox-item">
+                  <input type="checkbox" name="jenis_packaging" value="Paper Bag">
+                  <span>Paper Bag</span>
+                </label>
+                <label class="rh-checkbox-item">
+                  <input type="checkbox" name="jenis_packaging" value="Pouch / Sachet">
+                  <span>Pouch / Sachet</span>
+                </label>
+                <label class="rh-checkbox-item">
+                  <input type="checkbox" name="jenis_packaging" value="Lainnya">
+                  <span>Lainnya</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Short Form: Deskripsi -->
+            <div class="rh-field short-only">
+              <label for="deskripsi">Deskripsi Singkat Kebutuhan <span class="required">*</span></label>
+              <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Ceritakan kebutuhan packaging Anda: produk apa, ukuran kira-kira, jumlah yang dibutuhkan, dll."></textarea>
+            </div>
+
+            <!-- Advanced Form: Detail -->
+            <div class="advanced-only" style="display: none;">
+              <div class="rh-row">
+                <div class="rh-field">
+                  <label for="ukuran">Ukuran Box (P x L x T) <span class="required">*</span></label>
+                  <input type="text" id="ukuran" name="ukuran" placeholder="Contoh: 20 x 15 x 10 cm">
+                </div>
+                <div class="rh-field">
+                  <label for="quantity">Jumlah / Quantity <span class="required">*</span></label>
+                  <input type="text" id="quantity" name="quantity" placeholder="Contoh: 500 pcs">
+                </div>
+              </div>
+              <div class="rh-field">
+                <label for="target_harga">Target Harga per Pcs (Opsional)</label>
+                <input type="text" id="target_harga" name="target_harga" placeholder="Contoh: Rp 15.000 - Rp 20.000">
+              </div>
+            </div>
+
+            <div class="rh-nav">
+              <button type="button" class="rh-btn rh-btn-secondary" data-prev>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Kembali
+              </button>
+              <button type="button" class="rh-btn rh-btn-primary" data-next>
+                Lanjutkan
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 4: Material & Finishing (Advanced) / Upload & Submit (Short) -->
+          <div class="rh-step" data-step="4">
+            <!-- Short Form: Upload & Submit -->
+            <div class="short-only">
+              <h2 class="rh-step-title">Upload Referensi & Kirim</h2>
+              <p class="rh-step-desc">Upload gambar referensi jika ada (opsional)</p>
+
+              <div class="rh-field">
+                <label>Upload Referensi Desain (Opsional)</label>
+                <div class="rh-file-upload" id="fileUpload">
+                  <input type="file" id="files" name="files[]" multiple accept="image/*,.pdf">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="17 8 12 3 7 8"/>
+                    <line x1="12" y1="3" x2="12" y2="15"/>
+                  </svg>
+                  <p>Klik atau drag & drop file di sini</p>
+                  <small>Max 5 file, masing-masing max 50MB (JPG, PNG, PDF)</small>
+                </div>
+                <div class="rh-file-preview" id="filePreview"></div>
+              </div>
+
+              <div class="rh-nav">
+                <button type="button" class="rh-btn rh-btn-secondary" data-prev>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                  </svg>
+                  Kembali
+                </button>
+                <button type="submit" class="rh-btn rh-btn-primary" id="submitBtn">
+                  <span class="btn-text">Kirim Request</span>
+                  <span class="rh-loading">
+                    <span class="rh-spinner"></span>
+                    Mengirim...
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Advanced Form: Material & Finishing -->
+            <div class="advanced-only" style="display: none;">
+              <h2 class="rh-step-title">Material & Finishing</h2>
+              <p class="rh-step-desc">Pilih material dan finishing yang diinginkan</p>
+
+              <div class="rh-field">
+                <label for="material">Jenis Material <span class="required">*</span></label>
+                <select id="material" name="material">
+                  <option value="">-- Pilih Material --</option>
+                  <option value="Art Carton">Art Carton</option>
+                  <option value="Kraft">Kraft</option>
+                  <option value="Corrugated">Corrugated</option>
+                  <option value="Greyboard + Wrapping">Greyboard + Wrapping</option>
+                  <option value="Belum Tahu">Belum Tahu (Konsultasi)</option>
+                </select>
+              </div>
+
+              <div class="rh-field">
+                <label>Finishing (Opsional)</label>
+                <div class="rh-checkbox-grid">
+                  <label class="rh-checkbox-item">
+                    <input type="checkbox" name="finishing" value="Laminasi Glossy">
+                    <span>Laminasi Glossy</span>
+                  </label>
+                  <label class="rh-checkbox-item">
+                    <input type="checkbox" name="finishing" value="Laminasi Doff">
+                    <span>Laminasi Doff</span>
+                  </label>
+                  <label class="rh-checkbox-item">
+                    <input type="checkbox" name="finishing" value="Spot UV">
+                    <span>Spot UV</span>
+                  </label>
+                  <label class="rh-checkbox-item">
+                    <input type="checkbox" name="finishing" value="Emboss / Deboss">
+                    <span>Emboss / Deboss</span>
+                  </label>
+                  <label class="rh-checkbox-item">
+                    <input type="checkbox" name="finishing" value="Hot Stamping (Foil)">
+                    <span>Hot Stamping (Foil)</span>
+                  </label>
+                  <label class="rh-checkbox-item">
+                    <input type="checkbox" name="finishing" value="Tidak Perlu Finishing">
+                    <span>Tidak Perlu</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="rh-nav">
+                <button type="button" class="rh-btn rh-btn-secondary" data-prev>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                  </svg>
+                  Kembali
+                </button>
+                <button type="button" class="rh-btn rh-btn-primary" data-next>
+                  Lanjutkan
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5: Desain & Timeline (Advanced Only) -->
+          <div class="rh-step advanced-only" data-step="5" style="display: none;">
+            <h2 class="rh-step-title">Desain & Timeline</h2>
+            <p class="rh-step-desc">Informasi tentang desain dan target waktu</p>
+
+            <div class="rh-field">
+              <label>Status Desain <span class="required">*</span></label>
+              <div class="rh-options">
+                <label class="rh-option">
+                  <input type="radio" name="status_desain" value="Sudah ada file desain siap cetak">
+                  <div class="rh-option-content">
+                    <div class="rh-option-title">Sudah ada file desain siap cetak</div>
+                  </div>
+                </label>
+                <label class="rh-option">
+                  <input type="radio" name="status_desain" value="Butuh bantuan desain">
+                  <div class="rh-option-content">
+                    <div class="rh-option-title">Butuh bantuan desain</div>
+                  </div>
+                </label>
+                <label class="rh-option">
+                  <input type="radio" name="status_desain" value="Masih dalam proses">
+                  <div class="rh-option-content">
+                    <div class="rh-option-title">Masih dalam proses</div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="rh-field">
+              <label for="deadline">Target Deadline (Opsional)</label>
+              <input type="date" id="deadline" name="deadline">
+            </div>
+
+            <div class="rh-nav">
+              <button type="button" class="rh-btn rh-btn-secondary" data-prev>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Kembali
+              </button>
+              <button type="button" class="rh-btn rh-btn-primary" data-next>
+                Lanjutkan
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 6: Info Tambahan & Submit (Advanced Only) -->
+          <div class="rh-step advanced-only" data-step="6" style="display: none;">
+            <h2 class="rh-step-title">Informasi Tambahan & Kirim</h2>
+            <p class="rh-step-desc">Tambahkan catatan dan upload file referensi</p>
+
+            <div class="rh-field">
+              <label for="catatan">Catatan Tambahan (Opsional)</label>
+              <textarea id="catatan" name="catatan" rows="3" placeholder="Informasi tambahan yang perlu kami ketahui..."></textarea>
+            </div>
+
+            <div class="rh-field">
+              <label for="sumber_info">Bagaimana Anda mengetahui kami?</label>
+              <select id="sumber_info" name="sumber_info">
+                <option value="">-- Pilih --</option>
+                <option value="Google Search">Google Search</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Rekomendasi Teman">Rekomendasi Teman</option>
+                <option value="Marketplace">Marketplace</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <div class="rh-field">
+              <label>Upload File Desain / Referensi (Opsional)</label>
+              <div class="rh-file-upload" id="fileUploadAdvanced">
+                <input type="file" id="filesAdvanced" name="files[]" multiple accept="image/*,.pdf">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="17 8 12 3 7 8"/>
+                  <line x1="12" y1="3" x2="12" y2="15"/>
+                </svg>
+                <p>Klik atau drag & drop file di sini</p>
+                <small>Max 5 file, masing-masing max 50MB (JPG, PNG, PDF)</small>
+              </div>
+              <div class="rh-file-preview" id="filePreviewAdvanced"></div>
+            </div>
+
+            <div class="rh-nav">
+              <button type="button" class="rh-btn rh-btn-secondary" data-prev>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Kembali
+              </button>
+              <button type="submit" class="rh-btn rh-btn-primary" id="submitBtnAdvanced">
+                <span class="btn-text">Kirim Request</span>
+                <span class="rh-loading">
+                  <span class="rh-spinner"></span>
+                  Mengirim...
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Success State -->
+          <div class="rh-step" data-step="success" style="display: none;">
+            <div class="rh-success">
+              <div class="rh-success-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <h2>Request Berhasil Dikirim!</h2>
+              <p>Terima kasih atas minat Anda. Tim kami akan menghubungi Anda melalui WhatsApp dalam 1x24 jam.</p>
+              <div class="rh-success-actions">
+                <a href="https://wa.me/628195181427" class="rh-btn rh-btn-wa" target="_blank">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                  </svg>
+                  Chat WhatsApp
+                </a>
+                <a href="../index.html" class="rh-btn rh-btn-secondary">Kembali ke Beranda</a>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================ FOOTER ================ -->
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="../assets/logo/deartbox-logo.svg" data-src="../assets/logo/deartbox-logo.svg" alt="deartbox" width="40" height="40" loading="lazy" decoding="async" class="brand-logo" data-logo-light="../assets/logo/deartbox-logo.svg" data-logo-dark="../assets/logo/deartbox-logo-dark.svg">
+            <div>
+              <h3>deartbox Packaging</h3>
+              <p style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Box Anda, Misi Kami.</p>
+            </div>
+          </div>
+          <p>Produsen hardbox premium untuk brand Indonesia. Mitra produksi packaging custom yang tepercaya.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/de_artbox" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 5a5 5 0 100 10 5 5 0 000-10zm6.5-.5a1 1 0 10-1 1 1 1 0 001-1z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/deartbox-packaging-b08696376/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9h4v12H3zm7 0h4v1.7c.6-1 2-2 4-2 4 0 5 2.6 5 6v6h-4v-5.3c0-1.3 0-3-2-3s-2.3 1.5-2.3 2.9V21h-4z"/>
+              </svg>
+            </a>
+            
+            <a href="https://www.youtube.com/@deartboxPackaging-p6y" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a2.978 2.978 0 0 0-2.094-2.106C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.404.58A2.978 2.978 0 0 0 .502 6.186 31.248 31.248 0 0 0 0 12a31.248 31.248 0 0 0 .502 5.814 2.978 2.978 0 0 0 2.094 2.106C4.495 20.5 12 20.5 12 20.5s7.505 0 9.404-.58a2.978 2.978 0 0 0 2.094-2.106A31.248 31.248 0 0 0 24 12a31.248 31.248 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+
+            <a href="https://www.facebook.com/people/Deartbox-Packaging/pfbid0XNX5tqGV4kKzkamBUK18YBJewpPDgnXJM3NCLWhu1T8KL5b1F4h3miUYdZXtd854l/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Like us on Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.494v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Perusahaan</h4>
+          <ul class="footer-links">
+            <li><a href="/#features">Keunggulan</a></li>
+            <li><a href="/#showcase">Portofolio</a></li>
+            <li><a href="/#process">Proses</a></li>
+            <li><a href="/#testimonials">Testimoni</a></li>
+            <li><a href="/#contact">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-column">
+          <h4>Aset</h4>
+          <ul class="footer-links">
+            <li><a href="/requestharga/">Minta Penawaran</a></li>
+            <li><a href="/#video">Video Perusahaan</a></li>
+            <li><a href="../terms-of-service.html" target="_blank" rel="noopener noreferrer">Syarat & Ketentuan</a></li>
+            <li><a href="../privacy-policy.html" target="_blank" rel="noopener noreferrer">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-column">
+          <h4>Hubungi Kami</h4>
+          <ul class="footer-links footer-contact-links">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <a 
+              href="https://www.google.com/maps?q=Jl.+Gandaria+1+No.+3,+Gandaria+Utara,+Jakarta+Selatan+12130"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-address-link"
+            >
+              Jl. Gandaria 1 No. 3, Gandaria Utara, Jakarta Selatan 12130
+            </a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+              <a href="tel:+628195181427">+62 819-5181-427</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <a href="mailto:deartboxpackaging@gmail.com">deartboxpackaging@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Payment Methods Column -->
+        <div class="footer-column">
+          <h4>Metode Pembayaran</h4>
+          <div class="footer-payment-grid">
+            <img src="../assets/images/payments/bca.svg" data-src="../assets/images/payments/bca.svg" alt="BCA" class="payment-logo" loading="lazy" decoding="async">
+            <img src="../assets/images/payments/qris.svg" data-src="../assets/images/payments/qris.svg" alt="QRIS" class="payment-logo" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 deartbox Packaging — Bagian dari PT. Xerography Indonesia. Hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <a href="https://wa.me/628195181427" class="sticky-cta" aria-label="Chat via WhatsApp">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="sticky-cta-text">Chat Sekarang</span>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top" type="button">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- Main Script -->
+  <script defer src="../optimized_script.min.js"></script>
+
+  <!-- Request Harga Form Script -->
+  <script>
+  (function() {
+    'use strict';
+
+    const form = document.getElementById('requestHargaForm');
+    const progressBar = document.getElementById('progressBar');
+    let currentStep = 1;
+    let formType = 'short';
+    let uploadedFiles = [];
+
+    // Total steps based on form type
+    const getTotalSteps = () => formType === 'short' ? 4 : 6;
+
+    // Update progress bar
+    function updateProgress() {
+      const totalSteps = getTotalSteps();
+      const steps = progressBar.querySelectorAll('.rh-progress-step');
+      
+      // Adjust progress bar for form type
+      steps.forEach((step, index) => {
+        const stepNum = index + 1;
+        step.style.display = stepNum <= totalSteps ? 'block' : 'none';
+        step.classList.remove('active', 'completed');
+        
+        if (stepNum < currentStep) {
+          step.classList.add('completed');
+        } else if (stepNum === currentStep) {
+          step.classList.add('active');
+        }
+      });
+    }
+
+    // Show/hide steps
+    function showStep(step) {
+      document.querySelectorAll('.rh-step').forEach(s => {
+        s.classList.remove('active');
+        s.style.display = 'none';
+      });
+
+      const targetStep = document.querySelector(`.rh-step[data-step="${step}"]`);
+      if (targetStep) {
+        targetStep.style.display = 'block';
+        setTimeout(() => targetStep.classList.add('active'), 10);
+      }
+
+      currentStep = step;
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Toggle form type visibility
+    function updateFormTypeVisibility() {
+      const shortElements = document.querySelectorAll('.short-only');
+      const advancedElements = document.querySelectorAll('.advanced-only');
+      const shortTitle = document.querySelector('.short-title');
+      const advancedTitle = document.querySelector('.advanced-title');
+
+      if (formType === 'short') {
+        shortElements.forEach(el => el.style.display = '');
+        advancedElements.forEach(el => el.style.display = 'none');
+        if (shortTitle) shortTitle.style.display = '';
+        if (advancedTitle) advancedTitle.style.display = 'none';
+      } else {
+        shortElements.forEach(el => el.style.display = 'none');
+        advancedElements.forEach(el => el.style.display = '');
+        if (shortTitle) shortTitle.style.display = 'none';
+        if (advancedTitle) advancedTitle.style.display = '';
+      }
+
+      // Update progress bar steps count
+      const progressSteps = progressBar.querySelectorAll('.rh-progress-step');
+      const totalSteps = getTotalSteps();
+      
+      // Ensure we have enough progress steps
+      while (progressBar.children.length < totalSteps) {
+        const newStep = document.createElement('div');
+        newStep.className = 'rh-progress-step';
+        newStep.dataset.step = progressBar.children.length + 1;
+        progressBar.appendChild(newStep);
+      }
+
+      updateProgress();
+    }
+
+    // Validate current step
+    function validateStep(step) {
+      let isValid = true;
+      const currentStepEl = document.querySelector(`.rh-step[data-step="${step}"]`);
+      if (!currentStepEl) return true;
+
+      // Clear previous errors
+      currentStepEl.querySelectorAll('.rh-field.error').forEach(f => {
+        f.classList.remove('error');
+        const errMsg = f.querySelector('.error-message');
+        if (errMsg) errMsg.remove();
+      });
+
+      // Step 2: Contact Info
+      if (step === 2) {
+        const nama = document.getElementById('nama');
+        const brand = document.getElementById('brand');
+        const whatsapp = document.getElementById('whatsapp');
+        const email = document.getElementById('email');
+
+        if (!nama.value.trim() || nama.value.trim().length < 2) {
+          showError(nama, 'Nama harus minimal 2 karakter');
+          isValid = false;
+        }
+        if (!brand.value.trim() || brand.value.trim().length < 2) {
+          showError(brand, 'Nama brand harus minimal 2 karakter');
+          isValid = false;
+        }
+        if (!whatsapp.value.trim() || whatsapp.value.replace(/\D/g, '').length < 8) {
+          showError(whatsapp, 'Nomor WhatsApp tidak valid');
+          isValid = false;
+        }
+        if (!email.value.trim() || !isValidEmail(email.value)) {
+          showError(email, 'Format email tidak valid');
+          isValid = false;
+        }
+      }
+
+      // Step 3: Packaging
+      if (step === 3) {
+        const checkboxes = currentStepEl.querySelectorAll('input[name="jenis_packaging"]:checked');
+        if (checkboxes.length === 0) {
+          const field = currentStepEl.querySelector('.rh-checkbox-grid').closest('.rh-field');
+          showError(field.querySelector('label'), 'Pilih minimal 1 jenis packaging');
+          isValid = false;
+        }
+
+        if (formType === 'short') {
+          const deskripsi = document.getElementById('deskripsi');
+          if (!deskripsi.value.trim() || deskripsi.value.trim().length < 10) {
+            showError(deskripsi, 'Deskripsi minimal 10 karakter');
+            isValid = false;
+          }
+        } else {
+          const ukuran = document.getElementById('ukuran');
+          const quantity = document.getElementById('quantity');
+          if (!ukuran.value.trim()) {
+            showError(ukuran, 'Ukuran box harus diisi');
+            isValid = false;
+          }
+          if (!quantity.value.trim()) {
+            showError(quantity, 'Quantity harus diisi');
+            isValid = false;
+          }
+        }
+      }
+
+      // Step 4 (Advanced): Material
+      if (step === 4 && formType === 'advanced') {
+        const material = document.getElementById('material');
+        if (!material.value) {
+          showError(material, 'Pilih jenis material');
+          isValid = false;
+        }
+      }
+
+      // Step 5 (Advanced): Design Status
+      if (step === 5 && formType === 'advanced') {
+        const statusDesain = currentStepEl.querySelector('input[name="status_desain"]:checked');
+        if (!statusDesain) {
+          const field = currentStepEl.querySelector('.rh-options').closest('.rh-field');
+          showError(field.querySelector('label'), 'Pilih status desain');
+          isValid = false;
+        }
+      }
+
+      return isValid;
+    }
+
+    function showError(element, message) {
+      const field = element.closest('.rh-field') || element.parentElement;
+      field.classList.add('error');
+      const errDiv = document.createElement('div');
+      errDiv.className = 'error-message';
+      errDiv.textContent = message;
+      field.appendChild(errDiv);
+    }
+
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    // Form type selection
+    document.querySelectorAll('input[name="form_type"]').forEach(radio => {
+      radio.addEventListener('change', function() {
+        formType = this.value;
+        document.querySelectorAll('.rh-option').forEach(opt => opt.classList.remove('selected'));
+        this.closest('.rh-option').classList.add('selected');
+        updateFormTypeVisibility();
+      });
+    });
+
+    // Checkbox styling
+    document.querySelectorAll('.rh-checkbox-item input').forEach(cb => {
+      cb.addEventListener('change', function() {
+        this.closest('.rh-checkbox-item').classList.toggle('selected', this.checked);
+      });
+    });
+
+    // Radio option styling
+    document.querySelectorAll('.rh-option input[type="radio"]').forEach(radio => {
+      radio.addEventListener('change', function() {
+        const name = this.name;
+        document.querySelectorAll(`.rh-option input[name="${name}"]`).forEach(r => {
+          r.closest('.rh-option').classList.remove('selected');
+        });
+        this.closest('.rh-option').classList.add('selected');
+      });
+    });
+
+    // Navigation buttons
+    document.querySelectorAll('[data-next]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        if (validateStep(currentStep)) {
+          let nextStep = currentStep + 1;
+          
+          // Skip advanced-only steps for short form
+          if (formType === 'short' && nextStep === 5) {
+            nextStep = 'success'; // This shouldn't happen, submit handles it
+          }
+          
+          showStep(nextStep);
+        }
+      });
+    });
+
+    document.querySelectorAll('[data-prev]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        let prevStep = currentStep - 1;
+        if (prevStep >= 1) {
+          showStep(prevStep);
+        }
+      });
+    });
+
+    // File upload handling
+    function setupFileUpload(uploadEl, previewEl, inputEl) {
+      if (!uploadEl || !inputEl) return;
+
+      uploadEl.addEventListener('click', () => inputEl.click());
+      
+      uploadEl.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        uploadEl.classList.add('dragover');
+      });
+
+      uploadEl.addEventListener('dragleave', () => {
+        uploadEl.classList.remove('dragover');
+      });
+
+      uploadEl.addEventListener('drop', (e) => {
+        e.preventDefault();
+        uploadEl.classList.remove('dragover');
+        handleFiles(e.dataTransfer.files, previewEl);
+      });
+
+      inputEl.addEventListener('change', function() {
+        handleFiles(this.files, previewEl);
+      });
+    }
+
+    function handleFiles(files, previewEl) {
+      if (!previewEl) return;
+      
+      const maxFiles = 5;
+      const maxSize = 50 * 1024 * 1024;
+
+      Array.from(files).forEach(file => {
+        if (uploadedFiles.length >= maxFiles) {
+          alert('Maksimal 5 file');
+          return;
+        }
+        if (file.size > maxSize) {
+          alert(`File ${file.name} terlalu besar (max 50MB)`);
+          return;
+        }
+
+        uploadedFiles.push(file);
+        
+        const item = document.createElement('div');
+        item.className = 'rh-file-item';
+        item.innerHTML = `
+          <span>${file.name}</span>
+          <button type="button" data-remove="${uploadedFiles.length - 1}">&times;</button>
+        `;
+        previewEl.appendChild(item);
+
+        item.querySelector('button').addEventListener('click', function() {
+          const idx = parseInt(this.dataset.remove);
+          uploadedFiles.splice(idx, 1);
+          item.remove();
+          updateFileIndices(previewEl);
+        });
+      });
+    }
+
+    function updateFileIndices(previewEl) {
+      previewEl.querySelectorAll('.rh-file-item button').forEach((btn, idx) => {
+        btn.dataset.remove = idx;
+      });
+    }
+
+    setupFileUpload(
+      document.getElementById('fileUpload'),
+      document.getElementById('filePreview'),
+      document.getElementById('files')
+    );
+
+    setupFileUpload(
+      document.getElementById('fileUploadAdvanced'),
+      document.getElementById('filePreviewAdvanced'),
+      document.getElementById('filesAdvanced')
+    );
+
+    // Form submission
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const lastStep = formType === 'short' ? 4 : 6;
+      if (!validateStep(lastStep)) return;
+
+      const submitBtn = formType === 'short' 
+        ? document.getElementById('submitBtn')
+        : document.getElementById('submitBtnAdvanced');
+      
+      const btnText = submitBtn.querySelector('.btn-text');
+      const loading = submitBtn.querySelector('.rh-loading');
+
+      submitBtn.disabled = true;
+      btnText.style.display = 'none';
+      loading.classList.add('active');
+
+      try {
+        const formData = new FormData();
+        
+        // Add form type
+        formData.append('form_type', formType);
+
+        // Add all form fields
+        formData.append('nama', document.getElementById('nama').value.trim());
+        formData.append('brand', document.getElementById('brand').value.trim());
+        formData.append('whatsapp', document.getElementById('whatsapp').value.trim());
+        formData.append('email', document.getElementById('email').value.trim());
+
+        // Jenis packaging (checkboxes)
+        const jenisPackaging = [];
+        document.querySelectorAll('input[name="jenis_packaging"]:checked').forEach(cb => {
+          jenisPackaging.push(cb.value);
+        });
+        formData.append('jenis_packaging', jenisPackaging.join(', '));
+
+        if (formType === 'short') {
+          formData.append('deskripsi', document.getElementById('deskripsi').value.trim());
+        } else {
+          formData.append('alamat', document.getElementById('alamat').value.trim());
+          formData.append('ukuran', document.getElementById('ukuran').value.trim());
+          formData.append('quantity', document.getElementById('quantity').value.trim());
+          formData.append('target_harga', document.getElementById('target_harga').value.trim());
+          formData.append('material', document.getElementById('material').value);
+          
+          // Finishing (checkboxes)
+          const finishing = [];
+          document.querySelectorAll('input[name="finishing"]:checked').forEach(cb => {
+            finishing.push(cb.value);
+          });
+          formData.append('finishing', finishing.join(', '));
+
+          const statusDesain = document.querySelector('input[name="status_desain"]:checked');
+          formData.append('status_desain', statusDesain ? statusDesain.value : '');
+          formData.append('deadline', document.getElementById('deadline').value);
+          formData.append('catatan', document.getElementById('catatan').value.trim());
+          formData.append('sumber_info', document.getElementById('sumber_info').value);
+        }
+
+        // Add files
+        uploadedFiles.forEach(file => {
+          formData.append('files[]', file);
+        });
+
+        const response = await fetch('../api/requestharga.php', {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+
+        if (result.ok) {
+          showStep('success');
+          // Track conversion
+          if (typeof gtag === 'function') {
+            gtag('event', 'form_submit', {
+              event_category: 'Request Harga',
+              event_label: formType
+            });
+          }
+        } else {
+          alert(result.message || 'Terjadi kesalahan. Silakan coba lagi.');
+        }
+      } catch (error) {
+        console.error('Submit error:', error);
+        alert('Terjadi kesalahan jaringan. Silakan coba lagi.');
+      } finally {
+        submitBtn.disabled = false;
+        btnText.style.display = '';
+        loading.classList.remove('active');
+      }
+    });
+
+    // Initialize
+    updateFormTypeVisibility();
+    updateProgress();
+  })();
+  </script>
+</body>
+</html>

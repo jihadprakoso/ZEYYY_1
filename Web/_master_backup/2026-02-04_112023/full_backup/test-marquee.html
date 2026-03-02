@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Marquee Animation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .trust-section {
+      background: white;
+      padding: 40px 0;
+      border-radius: 12px;
+    }
+
+    .trust-title {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .trust-marquee {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .marquee-track {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      width: max-content;
+      animation: marquee 34s linear infinite;
+    }
+
+    .marquee-track:nth-child(2) {
+      animation: marquee 38s linear infinite reverse;
+    }
+
+    .trust-marquee img {
+      height: 18px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.85;
+      transition: opacity 0.25s ease;
+    }
+
+    .trust-marquee img:hover {
+      opacity: 1;
+    }
+
+    .trust-marquee:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .debug {
+      text-align: center;
+      margin-top: 20px;
+      padding: 20px;
+      background: #fff3cd;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="debug">
+    <h3>🔍 Marquee Animation Test</h3>
+    <p>Jika logo bergerak, berarti animasi bekerja!</p>
+    <p><strong>Baris 1:</strong> Bergerak ke KIRI ← | <strong>Baris 2:</strong> Bergerak ke KANAN →</p>
+  </div>
+
+  <section class="trust-section">
+    <p class="trust-title">Dipercaya oleh 50+ Brand di Indonesia</p>
+    
+    <div class="trust-marquee">
+      <!-- Row 1 -->
+      <div class="marquee-track">
+        <img src="assets/clients/logo-01.svg" alt="Logo 1">
+        <img src="assets/clients/logo-02.svg" alt="Logo 2">
+        <img src="assets/clients/logo-03.svg" alt="Logo 3">
+        <img src="assets/clients/logo-04.svg" alt="Logo 4">
+        <img src="assets/clients/logo-05.svg" alt="Logo 5">
+        <img src="assets/clients/logo-06.svg" alt="Logo 6">
+        <img src="assets/clients/logo-07.svg" alt="Logo 7">
+        <img src="assets/clients/logo-08.svg" alt="Logo 8">
+        <img src="assets/clients/logo-09.svg" alt="Logo 9">
+        <img src="assets/clients/logo-10.svg" alt="Logo 10">
+        <img src="assets/clients/logo-11.svg" alt="Logo 11">
+        <img src="assets/clients/logo-12.svg" alt="Logo 12">
+        <img src="assets/clients/logo-13.svg" alt="Logo 13">
+        <img src="assets/clients/logo-14.svg" alt="Logo 14">
+        <img src="assets/clients/logo-15.svg" alt="Logo 15">
+        <img src="assets/clients/logo-16.svg" alt="Logo 16">
+        <img src="assets/clients/logo-17.svg" alt="Logo 17">
+        <img src="assets/clients/logo-18.svg" alt="Logo 18">
+        <!-- Duplicate -->
+        <img src="assets/clients/logo-01.svg" alt="">
+        <img src="assets/clients/logo-02.svg" alt="">
+        <img src="assets/clients/logo-03.svg" alt="">
+        <img src="assets/clients/logo-04.svg" alt="">
+        <img src="assets/clients/logo-05.svg" alt="">
+        <img src="assets/clients/logo-06.svg" alt="">
+        <img src="assets/clients/logo-07.svg" alt="">
+        <img src="assets/clients/logo-08.svg" alt="">
+        <img src="assets/clients/logo-09.svg" alt="">
+        <img src="assets/clients/logo-10.svg" alt="">
+        <img src="assets/clients/logo-11.svg" alt="">
+        <img src="assets/clients/logo-12.svg" alt="">
+        <img src="assets/clients/logo-13.svg" alt="">
+        <img src="assets/clients/logo-14.svg" alt="">
+        <img src="assets/clients/logo-15.svg" alt="">
+        <img src="assets/clients/logo-16.svg" alt="">
+        <img src="assets/clients/logo-17.svg" alt="">
+        <img src="assets/clients/logo-18.svg" alt="">
+      </div>
+      
+      <!-- Row 2 -->
+      <div class="marquee-track">
+        <img src="assets/clients/logo-19.svg" alt="Logo 19">
+        <img src="assets/clients/logo-20.svg" alt="Logo 20">
+        <img src="assets/clients/logo-21.svg" alt="Logo 21">
+        <img src="assets/clients/logo-22.svg" alt="Logo 22">
+        <img src="assets/clients/logo-23.svg" alt="Logo 23">
+        <img src="assets/clients/logo-24.svg" alt="Logo 24">
+        <img src="assets/clients/logo-25.svg" alt="Logo 25">
+        <img src="assets/clients/logo-26.svg" alt="Logo 26">
+        <img src="assets/clients/logo-27.svg" alt="Logo 27">
+        <img src="assets/clients/logo-28.svg" alt="Logo 28">
+        <img src="assets/clients/logo-29.svg" alt="Logo 29">
+        <img src="assets/clients/logo-30.svg" alt="Logo 30">
+        <img src="assets/clients/logo-31.svg" alt="Logo 31">
+        <img src="assets/clients/logo-32.svg" alt="Logo 32">
+        <img src="assets/clients/logo-33.svg" alt="Logo 33">
+        <img src="assets/clients/logo-34.svg" alt="Logo 34">
+        <img src="assets/clients/logo-35.svg" alt="Logo 35">
+        <img src="assets/clients/logo-36.svg" alt="Logo 36">
+        <!-- Duplicate -->
+        <img src="assets/clients/logo-19.svg" alt="">
+        <img src="assets/clients/logo-20.svg" alt="">
+        <img src="assets/clients/logo-21.svg" alt="">
+        <img src="assets/clients/logo-22.svg" alt="">
+        <img src="assets/clients/logo-23.svg" alt="">
+        <img src="assets/clients/logo-24.svg" alt="">
+        <img src="assets/clients/logo-25.svg" alt="">
+        <img src="assets/clients/logo-26.svg" alt="">
+        <img src="assets/clients/logo-27.svg" alt="">
+        <img src="assets/clients/logo-28.svg" alt="">
+        <img src="assets/clients/logo-29.svg" alt="">
+        <img src="assets/clients/logo-30.svg" alt="">
+        <img src="assets/clients/logo-31.svg" alt="">
+        <img src="assets/clients/logo-32.svg" alt="">
+        <img src="assets/clients/logo-33.svg" alt="">
+        <img src="assets/clients/logo-34.svg" alt="">
+        <img src="assets/clients/logo-35.svg" alt="">
+        <img src="assets/clients/logo-36.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <div class="debug">
+    <p><strong>Troubleshooting:</strong></p>
+    <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+      <li>Jika logo tidak bergerak, buka DevTools Console (F12)</li>
+      <li>Cek apakah ada error CSS</li>
+      <li>Cek apakah browser support CSS animations</li>
+      <li>Cek apakah "Reduce Motion" aktif di OS settings</li>
+    </ul>
+  </div>
+</body>
+</html>

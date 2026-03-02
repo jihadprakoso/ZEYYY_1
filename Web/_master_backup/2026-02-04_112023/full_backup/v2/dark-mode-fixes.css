@@ -1,0 +1,192 @@
+/* ========================================
+   DEARTBOX PACKAGING - DARK MODE FIXES
+   Perbaikan untuk masalah readability
+   ======================================== */
+
+/* FIX 1: Logo bulan di button mode toggle (darkmode) - Tambahkan warna putih */
+.theme-toggle-icon.sun {
+  color: #d71921;
+}
+
+.theme-toggle-icon.moon {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .theme-toggle-icon.moon {
+  color: #ffffff;
+  stroke: #ffffff;
+}
+
+/* FIX 2: Tombol slideshow tidak readable (darkmode) - Perbaiki kontras */
+[data-theme="dark"] .slide-nav {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] .slide-nav:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="dark"] .slide-nav svg {
+  stroke: #ffffff;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .slide-dot {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="dark"] .slide-dot.active {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+/* FIX 3: Tombol CTA tidak readable (darkmode) - Pastikan kontras yang baik */
+[data-theme="dark"] .btn-hero-primary,
+[data-theme="dark"] .btn-cta-wa,
+[data-theme="dark"] .sticky-cta,
+[data-theme="dark"] .btn-submit-rfq {
+  background: #ff2d3a;
+  color: #ffffff;
+  border: none;
+}
+
+[data-theme="dark"] .btn-hero-primary:hover,
+[data-theme="dark"] .btn-cta-wa:hover,
+[data-theme="dark"] .sticky-cta:hover,
+[data-theme="dark"] .btn-submit-rfq:hover {
+  background: #d71921;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .btn-hero-primary svg,
+[data-theme="dark"] .btn-cta-wa svg,
+[data-theme="dark"] .sticky-cta svg {
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .cta-nav {
+  background: #ff2d3a;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .cta-nav:hover {
+  background: #d71921;
+  color: #ffffff;
+}
+
+/* FIX 4: Drop file area di RFQ hover jadi putih (darkmode) - Perbaiki warna hover */
+[data-theme="dark"] .file-upload-label {
+  background: var(--card);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme="dark"] .file-upload-label:hover {
+  border-color: #ff2d3a;
+  background: rgba(255, 45, 58, 0.1);
+  color: var(--text);
+}
+
+[data-theme="dark"] .file-upload-label.dragover {
+  border-color: #ff2d3a;
+  background: rgba(255, 45, 58, 0.15);
+  color: var(--text);
+}
+
+[data-theme="dark"] .file-upload-label svg {
+  stroke: var(--text);
+  color: var(--text);
+}
+
+[data-theme="dark"] .file-preview {
+  background: #1a1a1a;
+  border: 1px solid var(--border);
+}
+
+/* FIX 5: Footer text readability di lightmode - Perbaiki kontras teks */
+footer {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+footer .footer-brand p,
+footer .footer-links a,
+footer .footer-column p,
+footer .footer-bottom p,
+footer .footer-badge-item {
+  color: #b5b5b5;
+}
+
+footer .footer-links a:hover,
+footer .footer-address-link:hover {
+  color: #ffffff;
+}
+
+footer .footer-brand h3,
+footer .footer-column h4,
+footer .footer-logo h3 {
+  color: #ffffff;
+}
+
+footer .footer-payments-title {
+  color: #b5b5b5;
+}
+
+/* Dark mode footer - pastikan tetap readable */
+[data-theme="dark"] footer {
+  background: #0f0f0f;
+  border-top: 1px solid var(--border);
+  color: #ffffff;
+}
+
+[data-theme="dark"] footer .footer-brand p,
+[data-theme="dark"] footer .footer-links a,
+[data-theme="dark"] footer .footer-column p,
+[data-theme="dark"] footer .footer-bottom p,
+[data-theme="dark"] footer .footer-badge-item {
+  color: #b5b5b5;
+}
+
+[data-theme="dark"] footer .footer-links a:hover,
+[data-theme="dark"] footer .footer-address-link:hover {
+  color: #ffffff;
+}
+
+[data-theme="dark"] footer .footer-brand h3,
+[data-theme="dark"] footer .footer-column h4,
+[data-theme="dark"] footer .footer-logo h3 {
+  color: #ffffff;
+}
+
+/* Perbaikan tambahan untuk mobile CTA */
+[data-theme="dark"] .mobile-cta {
+  background: #ff2d3a;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .mobile-cta:hover {
+  background: #d71921;
+  color: #ffffff;
+}
+
+/* Perbaikan untuk back to top button */
+[data-theme="dark"] .back-to-top {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+[data-theme="dark"] .back-to-top:hover {
+  background: #ff2d3a;
+  color: #ffffff;
+  border-color: #ff2d3a;
+}
+
+[data-theme="dark"] .back-to-top svg {
+  stroke: #ffffff;
+}

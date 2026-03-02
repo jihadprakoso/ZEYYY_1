@@ -1,0 +1,100 @@
+RANDOMIZED LOGO ORDER - COPY PASTE KE HTML
+============================================
+
+<!-- Row 1 - Randomized Mix -->
+<div class="marquee-track">
+  <!-- ===== ROW 1 - LOGO SET 1 ===== -->
+  <img src="assets/clients/logo-14.svg" alt="Client Logo 14">
+  <img src="assets/clients/logo-27.svg" alt="Client Logo 27">
+  <img src="assets/clients/logo-05.svg" alt="Client Logo 5">
+  <img src="assets/clients/logo-33.svg" alt="Client Logo 33">
+  <img src="assets/clients/logo-19.svg" alt="Client Logo 19">
+  <img src="assets/clients/logo-08.svg" alt="Client Logo 8">
+  <img src="assets/clients/logo-31.svg" alt="Client Logo 31">
+  <img src="assets/clients/logo-12.svg" alt="Client Logo 12">
+  <img src="assets/clients/logo-24.svg" alt="Client Logo 24">
+  <img src="assets/clients/logo-03.svg" alt="Client Logo 3">
+  <img src="assets/clients/logo-36.svg" alt="Client Logo 36">
+  <img src="assets/clients/logo-17.svg" alt="Client Logo 17">
+  <img src="assets/clients/logo-29.svg" alt="Client Logo 29">
+  <img src="assets/clients/logo-06.svg" alt="Client Logo 6">
+  <img src="assets/clients/logo-21.svg" alt="Client Logo 21">
+  <img src="assets/clients/logo-11.svg" alt="Client Logo 11">
+  <img src="assets/clients/logo-35.svg" alt="Client Logo 35">
+  <img src="assets/clients/logo-02.svg" alt="Client Logo 2">
+  <!-- ===== ROW 1 - LOGO SET 2 (Different Random Order) ===== -->
+  <img src="assets/clients/logo-27.svg" alt="">
+  <img src="assets/clients/logo-03.svg" alt="">
+  <img src="assets/clients/logo-35.svg" alt="">
+  <img src="assets/clients/logo-12.svg" alt="">
+  <img src="assets/clients/logo-19.svg" alt="">
+  <img src="assets/clients/logo-06.svg" alt="">
+  <img src="assets/clients/logo-31.svg" alt="">
+  <img src="assets/clients/logo-14.svg" alt="">
+  <img src="assets/clients/logo-24.svg" alt="">
+  <img src="assets/clients/logo-08.svg" alt="">
+  <img src="assets/clients/logo-02.svg" alt="">
+  <img src="assets/clients/logo-29.svg" alt="">
+  <img src="assets/clients/logo-17.svg" alt="">
+  <img src="assets/clients/logo-33.svg" alt="">
+  <img src="assets/clients/logo-05.svg" alt="">
+  <img src="assets/clients/logo-21.svg" alt="">
+  <img src="assets/clients/logo-36.svg" alt="">
+  <img src="assets/clients/logo-11.svg" alt="">
+</div>
+
+<!-- Row 2 - Remaining Logos Randomized -->
+<div class="marquee-track">
+  <!-- ===== ROW 2 - LOGO SET 1 ===== -->
+  <img src="assets/clients/logo-23.svg" alt="Client Logo 23">
+  <img src="assets/clients/logo-09.svg" alt="Client Logo 9">
+  <img src="assets/clients/logo-34.svg" alt="Client Logo 34">
+  <img src="assets/clients/logo-16.svg" alt="Client Logo 16">
+  <img src="assets/clients/logo-28.svg" alt="Client Logo 28">
+  <img src="assets/clients/logo-01.svg" alt="Client Logo 1">
+  <img src="assets/clients/logo-20.svg" alt="Client Logo 20">
+  <img src="assets/clients/logo-13.svg" alt="Client Logo 13">
+  <img src="assets/clients/logo-30.svg" alt="Client Logo 30">
+  <img src="assets/clients/logo-07.svg" alt="Client Logo 7">
+  <img src="assets/clients/logo-25.svg" alt="Client Logo 25">
+  <img src="assets/clients/logo-18.svg" alt="Client Logo 18">
+  <img src="assets/clients/logo-32.svg" alt="Client Logo 32">
+  <img src="assets/clients/logo-04.svg" alt="Client Logo 4">
+  <img src="assets/clients/logo-26.svg" alt="Client Logo 26">
+  <img src="assets/clients/logo-15.svg" alt="Client Logo 15">
+  <img src="assets/clients/logo-10.svg" alt="Client Logo 10">
+  <img src="assets/clients/logo-22.svg" alt="Client Logo 22">
+  <!-- ===== ROW 2 - LOGO SET 2 (Different Random Order) ===== -->
+  <img src="assets/clients/logo-16.svg" alt="">
+  <img src="assets/clients/logo-30.svg" alt="">
+  <img src="assets/clients/logo-04.svg" alt="">
+  <img src="assets/clients/logo-22.svg" alt="">
+  <img src="assets/clients/logo-13.svg" alt="">
+  <img src="assets/clients/logo-28.svg" alt="">
+  <img src="assets/clients/logo-09.svg" alt="">
+  <img src="assets/clients/logo-34.svg" alt="">
+  <img src="assets/clients/logo-01.svg" alt="">
+  <img src="assets/clients/logo-25.svg" alt="">
+  <img src="assets/clients/logo-18.svg" alt="">
+  <img src="assets/clients/logo-07.svg" alt="">
+  <img src="assets/clients/logo-32.svg" alt="">
+  <img src="assets/clients/logo-20.svg" alt="">
+  <img src="assets/clients/logo-15.svg" alt="">
+  <img src="assets/clients/logo-26.svg" alt="">
+  <img src="assets/clients/logo-10.svg" alt="">
+  <img src="assets/clients/logo-23.svg" alt="">
+</div>
+
+============================================
+CARA PAKAI:
+1. Buka index_V2.1.html di text editor
+2. Cari bagian <div class="trust-marquee">
+3. Replace kedua <div class="marquee-track"> dengan HTML di atas
+4. Save dan refresh browser
+
+KEUNTUNGAN:
+- Logo teracak random, tidak ada pola berulang
+- Baris 1 dan baris 2 punya logo yang berbeda
+- Duplikat juga teracak dengan urutan berbeda
+- Saat animasi loop, tidak terlihat pola yang sama
+============================================

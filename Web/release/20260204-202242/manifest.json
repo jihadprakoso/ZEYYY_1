@@ -1,0 +1,524 @@
+﻿{
+    "version":  "20260204-202242",
+    "createdAt":  "2026-02-04T20:22:45.2182847+07:00",
+    "zip":  "deartbox-dist-20260204-202242.zip",
+    "fileCount":  129,
+    "files":  [
+                  {
+                      "path":  ".htaccess",
+                      "bytes":  1502
+                  },
+                  {
+                      "path":  "404.html",
+                      "bytes":  6428
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-01.svg",
+                      "bytes":  2665
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-02.svg",
+                      "bytes":  260324
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-03.svg",
+                      "bytes":  11918
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-04.svg",
+                      "bytes":  23718
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-05.svg",
+                      "bytes":  4699
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-06.svg",
+                      "bytes":  3517
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-07.svg",
+                      "bytes":  803
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-08.svg",
+                      "bytes":  91483
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-09.svg",
+                      "bytes":  33595
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-10.svg",
+                      "bytes":  2229
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-11.svg",
+                      "bytes":  13278
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-12.svg",
+                      "bytes":  6295
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-13.svg",
+                      "bytes":  9579
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-14.svg",
+                      "bytes":  8306
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-15.svg",
+                      "bytes":  1914
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-16.svg",
+                      "bytes":  1401
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-17.svg",
+                      "bytes":  14524
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-18.svg",
+                      "bytes":  4451
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-19.svg",
+                      "bytes":  3035
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-20.svg",
+                      "bytes":  1234
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-21.svg",
+                      "bytes":  8303
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-22.svg",
+                      "bytes":  1386
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-23.svg",
+                      "bytes":  3594
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-24.svg",
+                      "bytes":  44900
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-25.svg",
+                      "bytes":  317170
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-26.svg",
+                      "bytes":  19157
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-27.svg",
+                      "bytes":  37896
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-28.svg",
+                      "bytes":  5711
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-29.svg",
+                      "bytes":  12739
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-30.svg",
+                      "bytes":  4908
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-31.svg",
+                      "bytes":  1535
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-32.svg",
+                      "bytes":  43890
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-33.svg",
+                      "bytes":  33076
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-34.svg",
+                      "bytes":  30814
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-35.svg",
+                      "bytes":  3747
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-36.svg",
+                      "bytes":  5917
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-tahilalats.svg",
+                      "bytes":  71096
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-titisan.svg",
+                      "bytes":  2335
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-tong tji.svg",
+                      "bytes":  125467
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-uniqa.svg",
+                      "bytes":  2219
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-united creative.svg",
+                      "bytes":  8967
+                  },
+                  {
+                      "path":  "assets\\clients\\logo-wardah.svg",
+                      "bytes":  3807
+                  },
+                  {
+                      "path":  "assets\\images\\features\\custom-design.webp",
+                      "bytes":  182594
+                  },
+                  {
+                      "path":  "assets\\images\\features\\moq-flexible.webp",
+                      "bytes":  192996
+                  },
+                  {
+                      "path":  "assets\\images\\features\\quality-control.webp",
+                      "bytes":  105324
+                  },
+                  {
+                      "path":  "assets\\images\\flow.webp",
+                      "bytes":  85252
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\ALCHEMIST MIKA.webp",
+                      "bytes":  25048
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\BURNBURN.webp",
+                      "bytes":  199586
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\CEREMONY.webp",
+                      "bytes":  194478
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\FRAGHEAD SOFTBOX.webp",
+                      "bytes":  105952
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\GATSBY SEGITA.webp",
+                      "bytes":  84554
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\JJ ROYAL.webp",
+                      "bytes":  453822
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\MAKE OVER.webp",
+                      "bytes":  182594
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\RB CHERI GIGI.webp",
+                      "bytes":  179664
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\RUHE DIARY.webp",
+                      "bytes":  290588
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\SCALPERS.webp",
+                      "bytes":  60956
+                  },
+                  {
+                      "path":  "assets\\images\\FOTO LAINYA\\SOMETHING BULAT.webp",
+                      "bytes":  108348
+                  },
+                  {
+                      "path":  "assets\\images\\halamanutama\\delivery.webp",
+                      "bytes":  164132
+                  },
+                  {
+                      "path":  "assets\\images\\halamanutama\\hardbox-Custom deartbox.webp",
+                      "bytes":  244066
+                  },
+                  {
+                      "path":  "assets\\images\\halamanutama\\hardbox-hmns.webp",
+                      "bytes":  197226
+                  },
+                  {
+                      "path":  "assets\\images\\halamanutama\\hardbox-hmns2.webp",
+                      "bytes":  348774
+                  },
+                  {
+                      "path":  "assets\\images\\halamanutama\\hardbox-Love in Motion.webp",
+                      "bytes":  223458
+                  },
+                  {
+                      "path":  "assets\\images\\halamanutama\\hardbox-W3B.webp",
+                      "bytes":  236424
+                  },
+                  {
+                      "path":  "assets\\images\\LOGO\\deartbox-logo-01.svg",
+                      "bytes":  1519
+                  },
+                  {
+                      "path":  "assets\\images\\LOGO\\logo-01.svg",
+                      "bytes":  1519
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\custominsert1.webp",
+                      "bytes":  506508
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\custominsert2.webp",
+                      "bytes":  268930
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\moq1.webp",
+                      "bytes":  192996
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\moq2.webp",
+                      "bytes":  184494
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\premium1.webp",
+                      "bytes":  316558
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\premium2.webp",
+                      "bytes":  345392
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\premium3.webp",
+                      "bytes":  465950
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\qc1.webp",
+                      "bytes":  139454
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\qc2.webp",
+                      "bytes":  105324
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\qc3.webp",
+                      "bytes":  171966
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\rigidbox1.webp",
+                      "bytes":  312010
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\semiauto1.webp",
+                      "bytes":  472778
+                  },
+                  {
+                      "path":  "assets\\images\\manufacturing\\semiauto2.webp",
+                      "bytes":  437760
+                  },
+                  {
+                      "path":  "assets\\images\\marketplace\\shopee-logo.svg",
+                      "bytes":  5074
+                  },
+                  {
+                      "path":  "assets\\images\\marketplace\\tiktok-logo.svg",
+                      "bytes":  1673
+                  },
+                  {
+                      "path":  "assets\\images\\marketplace\\tiktok-logo-color.svg",
+                      "bytes":  1309
+                  },
+                  {
+                      "path":  "assets\\images\\marketplace\\tokopedia-logo.svg",
+                      "bytes":  504964
+                  },
+                  {
+                      "path":  "assets\\images\\payments\\Bank_Syariah_Indonesia.svg",
+                      "bytes":  24472
+                  },
+                  {
+                      "path":  "assets\\images\\payments\\bca.svg",
+                      "bytes":  11569
+                  },
+                  {
+                      "path":  "assets\\images\\payments\\bni.svg",
+                      "bytes":  7509
+                  },
+                  {
+                      "path":  "assets\\images\\payments\\bri.svg",
+                      "bytes":  8456
+                  },
+                  {
+                      "path":  "assets\\images\\payments\\mandiri.svg",
+                      "bytes":  7468
+                  },
+                  {
+                      "path":  "assets\\images\\payments\\mastercard.svg",
+                      "bytes":  4053
+                  },
+                  {
+                      "path":  "assets\\images\\payments\\visa.svg",
+                      "bytes":  852
+                  },
+                  {
+                      "path":  "assets\\images\\portfolio\\Project_1.webp",
+                      "bytes":  314852
+                  },
+                  {
+                      "path":  "assets\\images\\portfolio\\Project_2.webp",
+                      "bytes":  157618
+                  },
+                  {
+                      "path":  "assets\\images\\portfolio\\Project_3.webp",
+                      "bytes":  212158
+                  },
+                  {
+                      "path":  "assets\\images\\portfolio\\Project_4.webp",
+                      "bytes":  291716
+                  },
+                  {
+                      "path":  "assets\\images\\portfolio\\Project_5.webp",
+                      "bytes":  437384
+                  },
+                  {
+                      "path":  "assets\\images\\portfolio\\Project_6.webp",
+                      "bytes":  263006
+                  },
+                  {
+                      "path":  "assets\\images\\portfolio\\Project_7.webp",
+                      "bytes":  415588
+                  },
+                  {
+                      "path":  "assets\\images\\portfolio\\Project_8.webp",
+                      "bytes":  284636
+                  },
+                  {
+                      "path":  "assets\\images\\process\\consultation.webp",
+                      "bytes":  294532
+                  },
+                  {
+                      "path":  "assets\\images\\process\\delivery.webp",
+                      "bytes":  164132
+                  },
+                  {
+                      "path":  "assets\\images\\process\\design.webp",
+                      "bytes":  399138
+                  },
+                  {
+                      "path":  "assets\\images\\process\\flow.webp",
+                      "bytes":  85252
+                  },
+                  {
+                      "path":  "assets\\images\\process\\production.webp",
+                      "bytes":  437760
+                  },
+                  {
+                      "path":  "assets\\images\\SELECTED WORKS\\Project_1.webp",
+                      "bytes":  314852
+                  },
+                  {
+                      "path":  "assets\\images\\SELECTED WORKS\\Project_2.webp",
+                      "bytes":  157618
+                  },
+                  {
+                      "path":  "assets\\images\\SELECTED WORKS\\Project_3.webp",
+                      "bytes":  212158
+                  },
+                  {
+                      "path":  "assets\\images\\SELECTED WORKS\\Project_4.webp",
+                      "bytes":  291716
+                  },
+                  {
+                      "path":  "assets\\images\\SELECTED WORKS\\Project_5.webp",
+                      "bytes":  437384
+                  },
+                  {
+                      "path":  "assets\\images\\SELECTED WORKS\\Project_6.webp",
+                      "bytes":  263006
+                  },
+                  {
+                      "path":  "assets\\images\\SELECTED WORKS\\Project_7.webp",
+                      "bytes":  415588
+                  },
+                  {
+                      "path":  "assets\\images\\SELECTED WORKS\\Project_8.webp",
+                      "bytes":  284636
+                  },
+                  {
+                      "path":  "assets\\images\\services\\Finishing Premium\\Foto 1.webp",
+                      "bytes":  294532
+                  },
+                  {
+                      "path":  "assets\\images\\services\\Fully Custom Hardbox\\custom pola design.webp",
+                      "bytes":  321036
+                  },
+                  {
+                      "path":  "assets\\images\\services\\Fully Custom Hardbox\\custom pola design2.webp",
+                      "bytes":  399138
+                  },
+                  {
+                      "path":  "assets\\images\\services\\services1.webp",
+                      "bytes":  399138
+                  },
+                  {
+                      "path":  "assets\\images\\services\\services2.webp",
+                      "bytes":  383784
+                  },
+                  {
+                      "path":  "assets\\images\\services\\services3.webp",
+                      "bytes":  294532
+                  },
+                  {
+                      "path":  "assets\\images\\services\\Special-made Board\\Paperboard.webp",
+                      "bytes":  383784
+                  },
+                  {
+                      "path":  "assets\\images\\testimonials\\client-1.jpg",
+                      "bytes":  11710978
+                  },
+                  {
+                      "path":  "assets\\logo\\deartbox-logo.svg",
+                      "bytes":  1082
+                  },
+                  {
+                      "path":  "assets\\logo\\deartbox-logo-dark.svg",
+                      "bytes":  1519
+                  },
+                  {
+                      "path":  "index.html",
+                      "bytes":  74147
+                  },
+                  {
+                      "path":  "optimized_script.js",
+                      "bytes":  42189
+                  },
+                  {
+                      "path":  "optimized_styles.css",
+                      "bytes":  105591
+                  },
+                  {
+                      "path":  "privacy-policy.html",
+                      "bytes":  2686
+                  },
+                  {
+                      "path":  "robots.txt",
+                      "bytes":  826
+                  },
+                  {
+                      "path":  "sitemap.xml",
+                      "bytes":  896
+                  },
+                  {
+                      "path":  "terms-of-service.html",
+                      "bytes":  2319
+                  }
+              ]
+}

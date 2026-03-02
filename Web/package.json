@@ -1,0 +1,11 @@
+{
+  "name": "deartbox-web",
+  "private": true,
+  "scripts": {
+    "gen:images": "node tools/generate-responsive-images.mjs",
+    "opt:images": "node tools/recompress-critical-images.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.33.0"
+  }
+}
