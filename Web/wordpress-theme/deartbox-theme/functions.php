@@ -371,7 +371,7 @@ function deartbox_customize_register($wp_customize) {
     ));
 
     $wp_customize->add_setting('contact_phone', array(
-        'default'           => '+62 819-5181-427',
+        'default'           => '+62 819-5250-0104',
         'sanitize_callback' => 'sanitize_text_field',
     ));
 

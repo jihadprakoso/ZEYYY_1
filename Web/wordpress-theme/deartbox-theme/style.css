@@ -22,18 +22,20 @@ Deartbox Blog Theme - Premium Packaging Blog
   --border: #e5e5e5;
   --green: #25D366;
   --green-dark: #128C7E;
-  --red: #d71921;
+  --red: #381213;
+  --ruby: #9b111e;
   --crimson: #620d0d;
   --dark-grey: #1b1f23;
   --muted-grey: #6b7280;
   --dark-bg: #0c1019;
-  --dark-surface: #1b1f23;
+  --dark-surface: #161C27;
   --dark-text: #ffffff;
   --dark-muted: #9ca3af;
   
   /* RGB Values */
   --green-rgb: 37, 211, 102;
-  --red-rgb: 215, 25, 33;
+  --red-rgb: 56, 18, 19;
+  --ruby-rgb: 155, 17, 30;
   --crimson-rgb: 98, 13, 13;
   
   /* Theme Colors */

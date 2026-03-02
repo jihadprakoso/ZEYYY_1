@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 }
 
 $main_site_url = deartbox_get_option('main_site_url', 'https://deartbox.com');
-$phone = deartbox_get_option('contact_phone', '+62 819-5181-427');
+$phone = deartbox_get_option('contact_phone', '+62 819-5250-0104');
 $email = deartbox_get_option('contact_email', 'deartboxpackaging@gmail.com');
 $address = deartbox_get_option('contact_address', 'Jl. Gandaria 1 No. 3, Gandaria Utara, Jakarta Selatan 12130');
 
@@ -128,7 +128,7 @@ $facebook = deartbox_get_option('social_facebook', 'https://www.facebook.com/peo
     </footer>
 
     <!-- Sticky CTA -->
-    <a href="https://wa.me/628195181427?text=<?php echo urlencode('Halo deartbox, saya tertarik untuk konsultasi hardbox premium'); ?>" class="sticky-cta" aria-label="Chat via WhatsApp" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/6281952500104?text=<?php echo urlencode('Halo deartbox, saya tertarik untuk konsultasi hardbox premium'); ?>" class="sticky-cta" aria-label="Chat via WhatsApp" target="_blank" rel="noopener noreferrer">
         <?php deartbox_the_icon('whatsapp'); ?>
         <span class="sticky-cta-text">Chat Sekarang</span>
     </a>
