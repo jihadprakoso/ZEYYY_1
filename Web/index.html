@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="id-ID" data-hero-variant="g">
 <head>
+  <script>
+  (function () {
+    var path = window.location.pathname || '/';
+    var isIndexPath = path.endsWith('/') || path.endsWith('/index.html');
+    var isDistPath = path.indexOf('/dist/') !== -1;
+    if (!isIndexPath || isDistPath) return;
+    var basePath = path.endsWith('/index.html') ? path.slice(0, -'index.html'.length) : path;
+    window.location.replace(basePath + 'dist/index.html' + window.location.search + window.location.hash);
+  })();
+  </script>
   
   <!-- Google Tag Manager -->
   <script>
