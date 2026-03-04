@@ -1,6 +1,6 @@
 <?php
 /**
- * Deartbox Blog Theme Functions
+ * D'ArtBox Blog Theme Functions
  *
  * @package Deartbox
  * @version 1.0.0
@@ -253,15 +253,15 @@ function deartbox_breadcrumbs() {
             echo '<a href="' . esc_url(get_category_link($categories[0]->term_id)) . '">' . esc_html($categories[0]->name) . '</a>';
             if (is_single()) {
                 echo '<span class="separator"> / </span>';
-                echo '<span class="current">' . get_the_title() . '</span>';
+                echo '<span class="current">' . esc_html(get_the_title()) . '</span>';
             }
         }
     } elseif (is_page()) {
-        echo '<span class="current">' . get_the_title() . '</span>';
+        echo '<span class="current">' . esc_html(get_the_title()) . '</span>';
     } elseif (is_search()) {
-        echo '<span class="current">Search Results</span>';
+        echo '<span class="current">' . esc_html__('Search Results', 'deartbox') . '</span>';
     } elseif (is_404()) {
-        echo '<span class="current">404 Not Found</span>';
+        echo '<span class="current">' . esc_html__('404 Not Found', 'deartbox') . '</span>';
     }
 
     echo '</nav>';

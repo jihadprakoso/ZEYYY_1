@@ -1,5 +1,5 @@
 /**
- * Deartbox Blog Theme - Main JavaScript
+ * D'ArtBox Blog Theme - Main JavaScript
  *
  * @package Deartbox
  */
@@ -137,36 +137,61 @@
     }
 
     // ================ READING PROGRESS ================
-    const progressBar = document.querySelector('.reading-progress');
-    
-    if (progressBar && document.body.classList.contains('single-post')) {
-        window.addEventListener('scroll', function() {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = (scrollTop / docHeight) * 100;
-            progressBar.style.width = progress + '%';
-        }, { passive: true });
+    const progressBar = document.getElementById('readingProgress');
+
+    if (progressBar) {
+        function updateProgress() {
+            var scrollTop = window.scrollY;
+            var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            progressBar.style.width = Math.min(progress, 100) + '%';
+        }
+        window.addEventListener('scroll', updateProgress, { passive: true });
+        updateProgress();
     }
 
     // ================ COPY CODE BLOCKS ================
-    document.querySelectorAll('pre code').forEach(function(codeBlock) {
-        const wrapper = document.createElement('div');
-        wrapper.className = 'code-block-wrapper';
-        codeBlock.parentNode.insertBefore(wrapper, codeBlock);
-        wrapper.appendChild(codeBlock.parentNode.removeChild(codeBlock).parentNode);
+    function fallbackCopyText(text, btn) {
+        var textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none;';
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        var success = false;
+        try {
+            success = document.execCommand('copy');
+        } catch (e) {}
+        document.body.removeChild(textarea);
+        btn.textContent = success ? 'Copied!' : 'Failed';
+        setTimeout(function() { btn.textContent = 'Copy'; }, 2000);
+    }
 
-        const copyBtn = document.createElement('button');
+    document.querySelectorAll('pre code').forEach(function(codeBlock) {
+        var pre = codeBlock.parentNode; // <pre>
+        var wrapper = document.createElement('div');
+        wrapper.className = 'code-block-wrapper';
+        pre.parentNode.insertBefore(wrapper, pre);
+        wrapper.appendChild(pre);
+
+        var copyBtn = document.createElement('button');
         copyBtn.className = 'copy-code-btn';
+        copyBtn.setAttribute('aria-label', 'Copy code');
         copyBtn.textContent = 'Copy';
         wrapper.appendChild(copyBtn);
 
         copyBtn.addEventListener('click', function() {
-            navigator.clipboard.writeText(codeBlock.textContent).then(function() {
-                copyBtn.textContent = 'Copied!';
-                setTimeout(function() {
-                    copyBtn.textContent = 'Copy';
-                }, 2000);
-            });
+            var text = codeBlock.textContent;
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text).then(function() {
+                    copyBtn.textContent = 'Copied!';
+                    setTimeout(function() { copyBtn.textContent = 'Copy'; }, 2000);
+                }).catch(function() {
+                    fallbackCopyText(text, copyBtn);
+                });
+            } else {
+                fallbackCopyText(text, copyBtn);
+            }
         });
     });
 

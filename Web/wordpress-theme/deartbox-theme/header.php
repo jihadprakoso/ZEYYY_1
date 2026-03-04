@@ -15,8 +15,15 @@ $main_site_url = deartbox_get_option('main_site_url', 'https://deartbox.com');
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="profile" href="https://gmpg.org/xfn/11">
+    <!-- Prevent FOUC: apply saved theme before CSS renders -->
+    <script>
+    (function(){
+        var t = localStorage.getItem('deartbox-blog-theme');
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+    </script>
     <?php wp_head(); ?>
 </head>
 

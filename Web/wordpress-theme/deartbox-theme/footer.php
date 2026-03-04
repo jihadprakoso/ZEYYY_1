@@ -30,10 +30,10 @@ $facebook = deartbox_get_option('social_facebook', 'https://www.facebook.com/peo
                 <div class="footer-brand">
                     <a href="<?php echo esc_url($main_site_url); ?>" class="footer-logo">
                         <img src="<?php echo esc_url($main_site_url); ?>/assets/logo/deartbox-logo-dark.svg" alt="deartbox" width="40" height="40">
-                        <div>
-                            <strong>deartbox Packaging</strong>
-                            <span style="display:block;font-size:11px;opacity:0.7;">Box Anda, Misi Kami.</span>
-                        </div>
+                        <span class="footer-logo-text">
+                            <strong>D'ArtBox Packaging</strong>
+                            <span class="footer-logo-tagline">Box Anda, Misi Kami.</span>
+                        </span>
                     </a>
                     <p>Produsen hardbox premium untuk brand Indonesia. Mitra produksi packaging custom yang tepercaya.</p>
                     
@@ -122,13 +122,18 @@ $facebook = deartbox_get_option('social_facebook', 'https://www.facebook.com/peo
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> deartbox Packaging — Bagian dari PT. Xerography Indonesia. Hak cipta dilindungi.</p>
+                <p>&copy; <?php echo date_i18n('Y'); ?> D'ArtBox Packaging — Bagian dari PT. Xerography Indonesia. Hak cipta dilindungi.</p>
             </div>
         </div>
     </footer>
 
     <!-- Sticky CTA -->
-    <a href="https://wa.me/6281952500104?text=<?php echo urlencode('Halo deartbox, saya tertarik untuk konsultasi hardbox premium'); ?>" class="sticky-cta" aria-label="Chat via WhatsApp" target="_blank" rel="noopener noreferrer">
+    <?php
+    $wa_phone = preg_replace('/[^0-9]/', '', deartbox_get_option('contact_phone', '6281952500104'));
+    if (substr($wa_phone, 0, 1) === '0') $wa_phone = '62' . substr($wa_phone, 1);
+    $wa_url = 'https://wa.me/' . $wa_phone . '?text=' . urlencode('Halo deartbox, saya tertarik untuk konsultasi hardbox premium');
+    ?>
+    <a href="<?php echo esc_url($wa_url); ?>" class="sticky-cta" aria-label="Chat via WhatsApp" target="_blank" rel="noopener noreferrer">
         <?php deartbox_the_icon('whatsapp'); ?>
         <span class="sticky-cta-text">Chat Sekarang</span>
     </a>

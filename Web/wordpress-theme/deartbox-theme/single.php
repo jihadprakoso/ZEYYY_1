@@ -10,11 +10,19 @@ get_header();
 while (have_posts()) : the_post();
     $category = deartbox_first_category();
     $reading_time = deartbox_reading_time();
+    $share_links = deartbox_social_share();
 ?>
+
+<!-- Reading Progress Bar -->
+<div class="reading-progress-wrap" aria-hidden="true">
+    <div class="reading-progress" id="readingProgress"></div>
+</div>
 
 <!-- Post Header -->
 <section class="single-post-header">
     <div class="container">
+        <?php deartbox_breadcrumbs(); ?>
+
         <?php if ($category) : ?>
             <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>" class="post-category-badge">
                 <?php echo esc_html($category->name); ?>
@@ -53,6 +61,25 @@ while (have_posts()) : the_post();
         <article id="post-<?php the_ID(); ?>" <?php post_class('post-content'); ?>>
             <?php the_content(); ?>
         </article>
+
+        <!-- Social Share -->
+        <div class="social-share">
+            <span class="social-share-label"><?php esc_html_e( 'Bagikan:', 'deartbox' ); ?></span>
+            <div class="social-share-links">
+                <a href="<?php echo esc_url( $share_links['facebook'] ); ?>" target="_blank" rel="noopener noreferrer" class="share-btn share-facebook" aria-label="Share on Facebook">
+                    <?php deartbox_the_icon('facebook', 18); ?>
+                </a>
+                <a href="<?php echo esc_url( $share_links['twitter'] ); ?>" target="_blank" rel="noopener noreferrer" class="share-btn share-twitter" aria-label="Share on Twitter/X">
+                    <?php deartbox_the_icon('x', 18); ?>
+                </a>
+                <a href="<?php echo esc_url( $share_links['linkedin'] ); ?>" target="_blank" rel="noopener noreferrer" class="share-btn share-linkedin" aria-label="Share on LinkedIn">
+                    <?php deartbox_the_icon('linkedin', 18); ?>
+                </a>
+                <a href="<?php echo esc_url( $share_links['whatsapp'] ); ?>" target="_blank" rel="noopener noreferrer" class="share-btn share-whatsapp" aria-label="Share via WhatsApp">
+                    <?php deartbox_the_icon('whatsapp', 18); ?>
+                </a>
+            </div>
+        </div>
 
         <!-- Tags -->
         <?php

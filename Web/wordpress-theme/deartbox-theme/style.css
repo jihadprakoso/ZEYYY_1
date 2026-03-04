@@ -1,16 +1,16 @@
 /*
-Theme Name: Deartbox Blog
+Theme Name: D'ArtBox Blog
 Theme URI: https://deartbox.com
-Author: Deartbox Packaging
+Author: D'ArtBox Packaging
 Author URI: https://deartbox.com
-Description: Custom WordPress theme untuk blog deartbox Packaging - matching dengan design website utama.
+Description: Custom WordPress theme untuk blog D'ArtBox Packaging - matching dengan design website utama.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: deartbox
 Tags: blog, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-Deartbox Blog Theme - Premium Packaging Blog
+D'ArtBox Blog Theme - Premium Packaging Blog
 */
 
 /* ================ CSS VARIABLES (Matching Main Site) ================ */
@@ -42,7 +42,7 @@ Deartbox Blog Theme - Premium Packaging Blog
   --bg: var(--white);
   --card-bg: var(--white);
   --text: #0c1019;
-  --text-muted: #6b7280;
+  --text-muted: #4b5563;
   --text-light: #9ca3af;
   --accent: var(--red);
   --accent-2: var(--crimson);
@@ -85,11 +85,14 @@ Deartbox Blog Theme - Premium Packaging Blog
   --card-bg: var(--dark-surface);
   --text: var(--dark-text);
   --text-muted: var(--dark-muted);
-  --text-light: #6b7280;
+  --text-light: #9ca3af;
   --border: rgba(255,255,255,0.1);
   --light-grey: rgba(255,255,255,0.05);
   --header-bg: rgba(12, 16, 25, 0.9);
   --header-border: rgba(255,255,255,0.06);
+  /* Accent must be bright enough to read on dark surfaces */
+  --accent: #e53e3e;
+  --accent-2: #fc8181;
 }
 
 /* ================ RESET & BASE ================ */
@@ -476,8 +479,10 @@ p {
   margin-bottom: 16px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
 }
 
 .post-card-link {
@@ -1064,6 +1069,266 @@ p {
   color: white;
   transform: translateY(-2px);
 }
+
+/* ================ STICKY CTA ================ */
+.sticky-cta {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  background: var(--green);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.sticky-cta:hover {
+  background: var(--green-dark);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
+}
+
+.sticky-cta svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .sticky-cta .sticky-cta-text {
+    display: none;
+  }
+  .sticky-cta {
+    padding: 14px;
+    border-radius: 50%;
+  }
+}
+
+/* ================ READING PROGRESS ================ */
+.reading-progress-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--border);
+  z-index: 1100;
+}
+
+.reading-progress {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.1s linear;
+}
+
+/* ================ CODE BLOCKS ================ */
+.code-block-wrapper {
+  position: relative;
+  margin: 2em 0;
+}
+
+.code-block-wrapper pre {
+  margin: 0;
+  border-radius: var(--radius-md);
+  background: #1b1f23;
+  padding: 20px 24px;
+  overflow-x: auto;
+}
+
+.copy-code-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e5e5e5;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font-body);
+}
+
+.copy-code-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+/* ================ RELATED POSTS ================ */
+.related-posts {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.related-posts h3 {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+/* ================ BREADCRUMBS ================ */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.breadcrumbs a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.breadcrumbs a:hover {
+  color: var(--accent);
+}
+
+.breadcrumbs .separator {
+  color: var(--text-light);
+  margin: 0 2px;
+}
+
+.breadcrumbs .current {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ================ NO POSTS ================ */
+.no-posts {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.no-posts h2 {
+  margin-bottom: 12px;
+}
+
+.no-posts p {
+  margin-bottom: 24px;
+}
+
+/* ================ FOOTER LOGO ================ */
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  margin-bottom: 16px;
+  width: fit-content;
+  color: var(--dark-text);
+}
+
+.footer-logo:hover {
+  color: var(--dark-text);
+}
+
+.footer-logo img {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo-text strong {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
+  display: block;
+}
+
+.footer-logo-tagline {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 2px;
+  display: block;
+}
+
+/* ================ POST CARD — NO IMAGE PLACEHOLDER ================ */
+.post-card-thumb-placeholder {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.post-card-no-image {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  background: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+}
+
+/* ================ SOCIAL SHARE ================ */
+.social-share {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+  padding: 20px 24px;
+  background: var(--light-grey);
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+}
+
+.social-share-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.social-share-links {
+  display: flex;
+  gap: 10px;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.share-facebook:hover  { background: #1877f2; color: #fff; border-color: #1877f2; }
+.share-twitter:hover   { background: #000;    color: #fff; border-color: #000; }
+.share-linkedin:hover  { background: #0a66c2; color: #fff; border-color: #0a66c2; }
+.share-whatsapp:hover  { background: #25d366; color: #fff; border-color: #25d366; }
 
 /* ================ UTILITIES ================ */
 .sr-only {

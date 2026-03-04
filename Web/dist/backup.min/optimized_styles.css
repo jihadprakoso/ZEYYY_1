@@ -477,9 +477,9 @@ html:not([data-theme="dark"]) .faq-section .section-subtitle {
 }
 
 [data-theme="dark"] .faq-item:hover {
-  border-color: rgba(var(--yellow-rgb), 0.45);
-  background: rgba(var(--yellow-rgb), 0.03);
-  box-shadow: 0 12px 32px rgba(var(--yellow-rgb), 0.10);
+  border-color: rgba(var(--ruby-rgb), 0.35);
+  background: rgba(var(--ruby-rgb), 0.05);
+  box-shadow: 0 12px 32px rgba(var(--ruby-rgb), 0.12);
 }
 
 .faq-question {
@@ -504,7 +504,7 @@ html:not([data-theme="dark"]) .faq-section .section-subtitle {
 }
 
 [data-theme="dark"] .faq-question:hover {
-  color: var(--yellow);
+  color: var(--ruby);
 }
 
 .faq-icon {
@@ -531,12 +531,12 @@ html:not([data-theme="dark"]) .faq-section .section-subtitle {
 }
 
 [data-theme="dark"] .faq-item:not(.active):hover .faq-icon {
-  background: var(--yellow);
+  background: var(--ruby);
 }
 
 [data-theme="dark"] .faq-item:not(.active):hover .faq-icon svg {
-  stroke: var(--dark-bg);
-  color: var(--dark-bg);
+  stroke: #ffffff;
+  color: #ffffff;
 }
 
 .faq-item.active .faq-icon {
@@ -550,11 +550,11 @@ html:not([data-theme="dark"]) .faq-section .section-subtitle {
 }
 
 [data-theme="dark"] .faq-item.active .faq-icon {
-  background: var(--yellow);
+  background: var(--ruby);
 }
 
 [data-theme="dark"] .faq-item.active .faq-icon svg {
-  stroke: var(--dark-bg);
+  stroke: #ffffff;
 }
 
 .faq-answer {
@@ -992,7 +992,7 @@ p {
 [data-theme="dark"] .btn-hero-primary:hover,
 [data-theme="dark"] .sticky-cta:hover,
 [data-theme="dark"] .btn-submit-rfq:hover {
-  background: rgba(var(--orange-rgb), 0.92);
+  background: var(--ruby);
   color: #ffffff;
 }
 
@@ -1020,9 +1020,9 @@ p {
 }
 
 [data-theme="dark"] .cta-nav-secondary {
-  border-color: var(--orange);
+  border-color: var(--ruby);
   background: transparent;
-  color: var(--orange);
+  color: #ffffff;
 }
 
 [data-theme="dark"] .cta-nav-secondary:hover {
@@ -1041,8 +1041,8 @@ p {
 }
 
 [data-theme="dark"] .mobile-cta-secondary {
-  border-color: var(--orange);
-  color: var(--orange);
+  border-color: var(--ruby);
+  color: #ffffff;
 }
 
 [data-theme="dark"] .mobile-cta-secondary:hover {
@@ -1083,7 +1083,7 @@ p {
 [data-theme="dark"] .back-to-top:hover {
   background: var(--ruby);
   color: #ffffff;
-  border-color: var(--orange);
+  border-color: var(--ruby);
 }
 
 [data-theme="dark"] .back-to-top svg {
@@ -1156,9 +1156,9 @@ p {
 
 [data-theme="dark"] .btn-hero-secondary:hover {
   background: var(--ruby);
-  border-color: var(--orange);
+  border-color: var(--ruby);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(var(--orange-rgb), 0.25);
+  box-shadow: 0 4px 12px rgba(var(--ruby-rgb), 0.30);
 }
 [data-theme="dark"] .file-preview {
   background: var(--card);
@@ -1303,6 +1303,10 @@ p {
   background: var(--bg);
 }
 
+.pain-title-nowrap {
+  white-space: nowrap;
+}
+
 .pain-points-subtitle {
   margin: 10px auto 0;
   max-width: none;
@@ -1312,21 +1316,21 @@ p {
 }
 
 .pain-points-section.stretch-bg::before {
-  background: linear-gradient(180deg, transparent 0%, rgba(var(--red-rgb), 0.05) 34%, transparent 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(var(--ruby-rgb), 0.06) 34%, transparent 100%);
 }
 
 .pain-points-section .section-header {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .pain-points-panel {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: clamp(20px, 3vw, 28px);
-  background: var(--glass);
+  padding: clamp(24px, 3vw, 36px);
+  background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 18px;
-  box-shadow: var(--shadow-md);
+  border-radius: 20px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.07);
 }
 
 .pain-points-panel .pain-points-grid {
@@ -1336,28 +1340,43 @@ p {
 .pain-points-grid {
   list-style: none;
   padding: 0;
-  margin: 26px auto 0;
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 280px));
-  gap: 14px 18px;
-  justify-content: center;
-  max-width: 680px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
   position: relative;
   z-index: 1;
 }
 
 .pain-point-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 14px 16px;
-  background: var(--card);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 18px 16px 16px;
+  background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, opacity 0.35s ease;
+  border-radius: 12px;
+  border-left: 3px solid var(--ruby);
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease), opacity 0.35s var(--ease);
   opacity: 0;
   transform: translateY(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.pain-point-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(var(--ruby-rgb), 0.04) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.pain-point-item:hover::before {
+  opacity: 1;
 }
 
 .pain-point-item.is-visible {
@@ -1371,28 +1390,34 @@ p {
 .pain-point-item:nth-child(4) { transition-delay: 240ms; }
 
 .pain-point-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
-  border-color: rgba(var(--red-rgb), 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(var(--ruby-rgb), 0.12);
+  border-color: var(--border);
+  border-left-color: var(--crimson);
 }
 
 .pain-point-icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 999px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
   display: grid;
   place-items: center;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 1;
-  color: var(--red);
-  background: rgba(var(--red-rgb), 0.12);
+  color: var(--ruby);
+  background: rgba(var(--ruby-rgb), 0.10);
+  flex-shrink: 0;
+}
+
+.pain-point-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--ruby);
 }
 
 .pain-point-text {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--text);
+  line-height: 1.4;
 }
 
 .pain-points-conclusion {
@@ -1450,23 +1475,55 @@ p {
   box-shadow: 0 4px 12px rgba(var(--crimson-rgb), 0.22);
 }
 
+[data-theme="dark"] .pain-point-item {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+  border-left-color: var(--ruby);
+}
+
+[data-theme="dark"] .pain-point-item:hover {
+  background: rgba(var(--ruby-rgb), 0.08);
+  border-left-color: var(--crimson);
+  box-shadow: 0 8px 24px rgba(var(--ruby-rgb), 0.18);
+}
+
+[data-theme="dark"] .pain-point-icon {
+  background: rgba(var(--ruby-rgb), 0.15);
+}
+
+[data-theme="dark"] .pain-points-panel {
+  background: var(--card);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+}
+
 [data-theme="dark"] .pain-cta-secondary {
-  border-color: var(--orange);
-  color: var(--orange);
+  border-color: var(--ruby);
+  color: #ffffff;
 }
 
 [data-theme="dark"] .pain-cta-secondary:hover {
   background: var(--ruby);
-  border-color: var(--orange);
+  border-color: var(--ruby);
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(var(--orange-rgb), 0.25);
+  box-shadow: 0 4px 12px rgba(var(--ruby-rgb), 0.30);
+}
+
+@media (max-width: 900px) {
+  .pain-points-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pain-title-nowrap {
+    white-space: normal;
+  }
 }
 
 @media (max-width: 640px) {
   .pain-points-grid {
     grid-template-columns: 1fr;
     max-width: 380px;
-    margin-top: 28px;
+    margin-top: 0;
   }
 
   .pain-points-panel .pain-points-grid {
@@ -3065,8 +3122,8 @@ html[data-hero-variant="g"]:not([data-theme="dark"]) .hero-slideshow-container::
 }
 
 [data-theme="dark"] .showcase-filter-btn {
-  border-color: var(--orange);
-  color: var(--orange);
+  border-color: var(--ruby);
+  color: #ffffff;
 }
 
 [data-theme="dark"] .showcase-filter-btn:hover {
@@ -3076,7 +3133,7 @@ html[data-hero-variant="g"]:not([data-theme="dark"]) .hero-slideshow-container::
 
 [data-theme="dark"] .showcase-filter-btn.is-active {
   background: var(--ruby);
-  border-color: var(--orange);
+  border-color: var(--ruby);
   color: #ffffff;
 }
 
@@ -3537,8 +3594,8 @@ html[data-hero-variant="g"]:not([data-theme="dark"]) .hero-slideshow-container::
 }
 
 [data-theme="dark"] .btn-submit-rfq:hover {
-  background: rgba(var(--orange-rgb), 0.92);
-  box-shadow: 0 8px 20px rgba(var(--orange-rgb), 0.3);
+  background: var(--ruby);
+  box-shadow: 0 8px 20px rgba(var(--ruby-rgb), 0.30);
 }
 
 .btn-submit-rfq:disabled {
@@ -3919,9 +3976,9 @@ html[data-hero-variant="g"]:not([data-theme="dark"]) .hero-slideshow-container::
 }
 
 .btn-request-harga-primary:hover {
-  background: #b8151c;
+  background: var(--ruby);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(215, 25, 33, 0.3);
+  box-shadow: 0 8px 24px rgba(var(--ruby-rgb), 0.30);
 }
 
 .btn-request-harga-primary svg {
@@ -4075,15 +4132,15 @@ html[data-hero-variant="g"]:not([data-theme="dark"]) .hero-slideshow-container::
 }
 
 [data-theme="dark"] .btn-inline-secondary {
-  border-color: var(--orange);
-  color: var(--orange);
+  border-color: var(--ruby);
+  color: #ffffff;
 }
 
 [data-theme="dark"] .btn-inline-secondary:hover {
   background: var(--ruby);
   color: #ffffff;
-  border-color: var(--orange);
-  box-shadow: 0 4px 12px rgba(var(--orange-rgb), 0.25);
+  border-color: var(--ruby);
+  box-shadow: 0 4px 12px rgba(var(--ruby-rgb), 0.30);
 }
 
 .showcase-more {
@@ -4138,7 +4195,7 @@ html[data-hero-variant="g"]:not([data-theme="dark"]) .hero-slideshow-container::
 
 [data-theme="dark"] .btn-block-cta:hover {
   background: transparent;
-  color: var(--orange);
+  color: var(--ruby);
   box-shadow: none;
 }
 
@@ -6232,7 +6289,7 @@ html:not([data-theme="dark"]) .footer-payment-grid .payment-logo {
 [data-theme="dark"] .back-to-top:hover {
   background: var(--ruby) !important;
   color: #ffffff !important;
-  border-color: var(--orange) !important;
+  border-color: var(--ruby) !important;
 }
 
 
