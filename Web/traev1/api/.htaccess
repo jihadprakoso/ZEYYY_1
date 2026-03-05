@@ -23,7 +23,7 @@ Allow from all
 </IfModule>
 
 <IfModule mod_security2.c>
-SecRuleEngine On
+SecRuleEngine DetectionOnly
 </IfModule>
 
 <LimitExcept POST OPTIONS>
